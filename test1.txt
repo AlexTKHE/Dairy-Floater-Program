@@ -1,0 +1,108 @@
+The schedule for the day in the format of (Name, Position, shift start val - shift end val):
+Dulcinea, Rotation Floater, 2-9.
+Renate, Rotation Floater, 2-9.
+Tasha, Rotation Floater, 2-6.
+Friederike, Order Filler, 2-9.
+Maribel, Rotation Floater, 2-9.
+Minetta, Rotation Floater, 6-9.
+Agnola, Rotation Floater, 2-9.
+Petra, Rotation Floater, 6-9.
+Koo, Rotation Floater, 6-9.
+Jojo, Order Filler, 8-2.
+Mariejeanne, Rotation Floater, 8-2.
+Bridgette, Rotation Floater, 11-4.
+Lucie, Rotation Floater, 12-4.
+Philippine, Rotation Floater, 12-4.
+Dulce, Order Filler, 12-4.
+Myrle, Station Manager, 12-4.
+Elenore, Rotation Floater, 6-9.
+Fenelia, Rotation Floater, 2-9.
+Trisha, Rotation Floater, 2-9.
+Libbi, Order Filler, 2-9.
+Karoline, Station Manager, 2-9.
+Doralia, Rotation Floater, 6-9.
+Dorita, Rotation Floater, 2-9.
+Konstanze, Rotation Floater, 2-6.
+Marti, Rotation Floater, 2-9.
+Cassi, Manager, 2-6.
+Arabelle, Rotation Floater, 2-6.
+Lauri, Rotation Floater, 6-9.
+Tessie, Rotation Floater, 2-9.
+Lorianne, Order Filler, 2-6.
+Catie, Rotation Floater, 2-9.
+Constantine, Manager, 2-9.
+Stella, Rotation Floater, 2-6.
+Kissee, Rotation Floater, 6-9.
+Remy, Rotation Floater, 6-9.
+Clarinda, Rotation Floater, 2-6.
+Brigida, Rotation Floater, 2-9.
+Stephannie, Rotation Floater, 6-9.
+Kathryn, Rotation Floater, 6-9.
+Sheilah, Rotation Floater, 2-9.
+Catrina, Rotation Floater, 2-9.
+Denyse, Rotation Floater, 2-6.
+Martguerita, Rotation Floater, 2-9.
+Collette, Order Filler, 6-9.
+Shell, Manager, 6-9.
+
+
+
+
+Rotation Schedule for the day will be: 
+ 
+ 
+Walk-ups: 
+ 
+
+2:00-2:30 PM:         Order Taker   1:          Trisha   
+2:30-3:00 PM:         Order Taker   1:          Denyse   
+3:00-3:30 PM:         Order Taker   1:           Catie   
+3:30-4:00 PM:         Order Taker   1:         Fenelia   
+4:00-4:30 PM:         Order Taker   1:          Dorita   
+4:30-5:00 PM:         Order Taker   1:          Dorita   
+5:00-5:30 PM:         Order Taker   1:         Sheilah   
+5:30-6:00 PM:         Order Taker   1:        Arabelle   
+6:00-6:30 PM:         Order Taker   1:         Catrina   
+6:30-7:00 PM:         Order Taker   1:     Martguerita   
+7:00-7:30 PM:         Order Taker   1:         Elenore   
+7:30-8:00 PM:         Order Taker   1:           Catie   
+8:00-8:30 PM:         Order Taker   1:         Fenelia   
+8:30-9:00 PM:         Order Taker   1:          Dorita   
+ 
+ 
+Driveway: 
+ 
+
+2:00-2:30 PM:         Order Taker   1:          Stella   
+2:30-3:00 PM:         Order Taker   1:        Arabelle   
+3:00-3:30 PM:         Order Taker   1:         Brigida   
+3:30-4:00 PM:         Order Taker   1:          Tessie   
+4:00-4:30 PM:         Order Taker   1:       Konstanze   
+4:30-5:00 PM:         Order Taker   1:         Fenelia   
+5:00-5:30 PM:         Order Taker   1:          Tessie   
+5:30-6:00 PM:         Order Taker   1:         Maribel   
+6:00-6:30 PM:         Order Taker   1:          Renate   
+6:30-7:00 PM:         Order Taker   1:         Brigida   
+7:00-7:30 PM:         Order Taker   1:          Dorita   
+7:30-8:00 PM:         Order Taker   1:          Trisha   
+8:00-8:30 PM:         Order Taker   1:           Marti   
+8:30-9:00 PM:         Order Taker   1:         Maribel   
+ 
+ 
+Floaters: 
+ 
+
+2:00-2:30 PM:         Cashier   1:         Catrina   Order Taker   1:       Bridgette   
+2:30-3:00 PM:         Cashier   1:           Tasha   Order Taker   1:       Bridgette   
+3:00-3:30 PM:         Cashier   1:          Dorita   Order Taker   1:       Bridgette   
+3:30-4:00 PM:         Cashier   1:          Dorita   Order Taker   1:         Catrina   
+4:00-4:30 PM:         Cashier   1:          Trisha   Order Taker   1:         Brigida   
+4:30-5:00 PM:         Cashier   1:         Maribel   Order Taker   1:          Renate   
+5:00-5:30 PM:         Cashier   1:           Tasha   Order Taker   1:         Fenelia   
+5:30-6:00 PM:         Cashier   1:          Trisha   Order Taker   1:         Catrina   
+6:00-6:30 PM:         Cashier   1:        Dulcinea   Order Taker   1:          Agnola   
+6:30-7:00 PM:         Cashier   1:          Dorita   Order Taker   1:           Petra   
+7:00-7:30 PM:         Cashier   1:         Minetta   Order Taker   1:           Lauri   
+7:30-8:00 PM:         Cashier   1:         Maribel   Order Taker   1:            Remy   
+8:00-8:30 PM:         Cashier   1:          Kissee   Order Taker   1:         Doralia   
+8:30-9:00 PM:         Cashier   1:         Doralia   Order Taker   1:           Catie   
