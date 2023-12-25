@@ -215,7 +215,7 @@ public class write {
         int[] countC = new int[positions.length];
         int[] countO = new int[positions.length];
 
-        PrintWriter writer = new PrintWriter("test1.txt", "UTF-8");
+        PrintWriter writer = new PrintWriter("src/main/txt/test1.txt", "UTF-8");
 
         createShifts(writer, daysShift30);
 

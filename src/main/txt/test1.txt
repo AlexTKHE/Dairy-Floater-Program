@@ -1,0 +1,108 @@
+The schedule for the day in the format of (Name, Position, shift start val - shift end val):
+Danna, Rotation Floater, 2-6.
+Eulalie, Rotation Floater, 2-6.
+Tiff, Order Filler, 2-9.
+Lizzie, Rotation Floater, 2-6.
+Gwennie, Rotation Floater, 2-6.
+Susy, Order Filler, 2-9.
+Arlena, Rotation Floater, 2-6.
+Sharia, Rotation Floater, 2-6.
+Vally, Rotation Floater, 2-9.
+Marissa, Station Manager, 8-2.
+Nicolle, Station Manager, 8-2.
+Griselda, Rotation Floater, 11-4.
+Berti, Rotation Floater, 12-4.
+Paola, Rotation Floater, 12-4.
+Roxi, Order Filler, 12-4.
+Almire, Rotation Floater, 12-4.
+Aila, Rotation Floater, 2-9.
+Kayla, Rotation Floater, 2-6.
+Florry, Station Manager, 6-9.
+Kristel, Rotation Floater, 6-9.
+Krissy, Rotation Floater, 2-9.
+Modestine, Order Filler, 2-6.
+Rachele, Rotation Floater, 6-9.
+Bunny, Order Filler, 2-9.
+Tabbatha, Rotation Floater, 6-9.
+Susannah, Station Manager, 2-9.
+Tanitansy, Rotation Floater, 2-9.
+Sandye, Rotation Floater, 6-9.
+Midge, Order Filler, 6-9.
+Hedwig, Order Filler, 6-9.
+Bobby, Rotation Floater, 2-9.
+De, Rotation Floater, 2-6.
+Aigneis, Rotation Floater, 2-9.
+Lib, Rotation Floater, 6-9.
+Deirdre, Rotation Floater, 2-9.
+Dosi, Rotation Floater, 6-9.
+Sabrina, Rotation Floater, 2-6.
+Kari, Rotation Floater, 2-6.
+Pansy, Rotation Floater, 6-9.
+Jackqueline, Rotation Floater, 2-6.
+Sheila, Rotation Floater, 6-9.
+Casi, Rotation Floater, 2-9.
+Judy, Rotation Floater, 2-6.
+Ranique, Order Filler, 6-9.
+Charlena, Rotation Floater, 6-9.
+
+
+
+
+Rotation Schedule for the day will be: 
+ 
+ 
+Walk-ups: 
+ 
+
+2:00-2:30 PM:         Order Taker   1:          Sharia   
+2:30-3:00 PM:         Order Taker   1:        Griselda   
+3:00-3:30 PM:         Order Taker   1:          Almire   
+3:30-4:00 PM:         Order Taker   1:          Lizzie   
+4:00-4:30 PM:         Order Taker   1:          Krissy   
+4:30-5:00 PM:         Order Taker   1:         Sabrina   
+5:00-5:30 PM:         Order Taker   1:         Deirdre   
+5:30-6:00 PM:         Order Taker   1:            Kari   
+6:00-6:30 PM:         Order Taker   1:         Rachele   
+6:30-7:00 PM:         Order Taker   1:            Aila   
+7:00-7:30 PM:         Order Taker   1:         Deirdre   
+7:30-8:00 PM:         Order Taker   1:         Aigneis   
+8:00-8:30 PM:         Order Taker   1:        Charlena   
+8:30-9:00 PM:         Order Taker   1:            Aila   
+ 
+ 
+Driveway: 
+ 
+
+2:00-2:30 PM:         Order Taker   1:           Danna   
+2:30-3:00 PM:         Order Taker   1:         Aigneis   
+3:00-3:30 PM:         Order Taker   1:          Arlena   
+3:30-4:00 PM:         Order Taker   1:        Griselda   
+4:00-4:30 PM:         Order Taker   1:          Sharia   
+4:30-5:00 PM:         Order Taker   1:         Gwennie   
+5:00-5:30 PM:         Order Taker   1:         Gwennie   
+5:30-6:00 PM:         Order Taker   1:           Kayla   
+6:00-6:30 PM:         Order Taker   1:         Kristel   
+6:30-7:00 PM:         Order Taker   1:          Sheila   
+7:00-7:30 PM:         Order Taker   1:        Tabbatha   
+7:30-8:00 PM:         Order Taker   1:         Deirdre   
+8:00-8:30 PM:         Order Taker   1:             Lib   
+8:30-9:00 PM:         Order Taker   1:        Charlena   
+ 
+ 
+Floaters: 
+ 
+
+2:00-2:30 PM:         Cashier   1:           Berti   Order Taker   1:          Arlena   
+2:30-3:00 PM:         Cashier   1:     Jackqueline   Order Taker   1:         Gwennie   
+3:00-3:30 PM:         Cashier   1:           Bobby   Order Taker   1:           Berti   
+3:30-4:00 PM:         Cashier   1:            Kari   Order Taker   1:          Arlena   
+4:00-4:30 PM:         Cashier   1:         Gwennie   Order Taker   1:          Arlena   
+4:30-5:00 PM:         Cashier   1:         Deirdre   Order Taker   1:              De   
+5:00-5:30 PM:         Cashier   1:         Eulalie   Order Taker   1:         Aigneis   
+5:30-6:00 PM:         Cashier   1:          Arlena   Order Taker   1:          Krissy   
+6:00-6:30 PM:         Cashier   1:         Deirdre   Order Taker   1:           Pansy   
+6:30-7:00 PM:         Cashier   1:          Krissy   Order Taker   1:         Kristel   
+7:00-7:30 PM:         Cashier   1:           Pansy   Order Taker   1:          Sheila   
+7:30-8:00 PM:         Cashier   1:        Charlena   Order Taker   1:            Aila   
+8:00-8:30 PM:         Cashier   1:           Pansy   Order Taker   1:       Tanitansy   
+8:30-9:00 PM:         Cashier   1:         Aigneis   Order Taker   1:        Tabbatha   

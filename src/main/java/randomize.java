@@ -72,7 +72,7 @@ public class randomize {
             // Logic to randomize the position
 
             try {
-                Scanner in = new Scanner(new File("names.txt"));
+                Scanner in = new Scanner(new File("src/main/txt/names.txt"));
                 for (int o = 0; o < int_random3; o++) {
                     // Check to make sure that reading works
                     in.nextLine();
