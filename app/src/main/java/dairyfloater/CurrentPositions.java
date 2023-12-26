@@ -1,10 +1,12 @@
-public class currentPositions {
+package dairyfloater;
+
+public class CurrentPositions {
     private String[] cashier;
     private String[] orderTaker;
     private int numberOfCashiers = 0;
     private int numberOfOrderTakers = 0;
     
-    public currentPositions(int numOfCashiers, int numOfOrderTakers) {
+    public CurrentPositions(int numOfCashiers, int numOfOrderTakers) {
         cashier = new String[numOfCashiers];
         orderTaker = new String[numOfOrderTakers];
         for (int x = 0; x < numOfCashiers; x++) {

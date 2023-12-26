@@ -1,14 +1,18 @@
+package dairyfloater;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class randomize {
+import dairyfloater.*;
 
-    public employee[] createEmployees(int n) {
+public class Randomize {
+
+    public Employee[] createEmployees(int n) {
         String name = "";
         String instancePosition = "";
-        employee[] daysShift30 = new employee[n];
+        Employee[] daysShift30 = new Employee[n];
         for (int i = 0; i < daysShift30.length; i++) {
             // all following logic to make a random and logical shift
 
@@ -87,12 +91,12 @@ public class randomize {
 
             // END
 
-            daysShift30[i] = new employee(name, instancePosition, start, shiftLength);
+            daysShift30[i] = new Employee(name, instancePosition, start, shiftLength);
         }
         return daysShift30;
     }
 
-    public int[] randomizeEmployees(employee[] daysShift30) {
+    public int[] randomizeEmployees(Employee[] daysShift30) {
 
         // create a random scrambled array for employees on shift on that time
 
@@ -114,7 +118,7 @@ public class randomize {
         return randomA;
     }
 
-    public employee[] assignACashier(employee[] daysShift30, currentPositions[] positions, schedule may30,
+    public Employee[] assignACashier(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30,
             int hour, int halfHour, int employee, int takerNum) {
         if (!positions[halfHour-may30.getStart()].hasCashier(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() == 1
                 && daysShift30[employee].canFloat()) {
@@ -125,7 +129,7 @@ public class randomize {
         return daysShift30;
     }
 
-    public employee[] assignAOrderTaker(employee[] daysShift30, currentPositions[] positions, schedule may30,
+    public Employee[] assignAOrderTaker(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30,
              int hour, int halfHour, int employee, int takerNum) {
         
         if (!positions[halfHour-may30.getStart()].hasOrderTaker(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() == 1

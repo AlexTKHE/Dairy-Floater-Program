@@ -1,3 +1,5 @@
+package dairyfloater;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -5,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 record PositionsRecord(int[] countC, int[] countO) {
 };
 
-public class write {
+public class Write {
 
     private String name1 = "";
     private String name2 = "";
@@ -14,18 +16,18 @@ public class write {
     private int cashierPerLine = 0;
     private int orderTakerPerLine = 0;
 
-    public int numLines(schedule may30) {
+    public int numLines(Schedule may30) {
         return may30.getNumberOfLines();
     }
 
-    public write(String name1, String name2, String name3, String name4) {
+    public Write(String name1, String name2, String name3, String name4) {
         this.name1 = name1;
         this.name2 = name2;
         this.name3 = name3;
         this.name4 = name4;
     }
 
-    public void createHeader(schedule may30, int x, PrintWriter writer) {
+    public void createHeader(Schedule may30, int x, PrintWriter writer) {
         if (numLines(may30) > 0 && x == 0) {
             writer.println(" \n \n" + name1 + ": \n \n");
         } else if (numLines(may30) > 1 && x == 1) {
@@ -39,7 +41,7 @@ public class write {
         }
     }
 
-    public void createShifts(PrintWriter writer, employee[] daysShift30) {
+    public void createShifts(PrintWriter writer, Employee[] daysShift30) {
 
         writer.println("The schedule for the day in the format of (Name, Position, shift start val - shift end val):");
 
@@ -81,7 +83,7 @@ public class write {
         }
     }
 
-    public boolean isMoreThanOneLine(schedule may30) {
+    public boolean isMoreThanOneLine(Schedule may30) {
         if (numLines(may30) > 1) {
             return true;
         } else {
@@ -89,7 +91,7 @@ public class write {
         }
     }
 
-    public PositionsRecord createPositionsPerfectMatch(schedule may30, PrintWriter writer, currentPositions[] positions,
+    public PositionsRecord createPositionsPerfectMatch(Schedule may30, PrintWriter writer, CurrentPositions[] positions,
             int i, int[] countC, int[] countO) {
         if (numLines(may30) == 1) {
             for (int ii = 0; ii < positions[i - may30.getStart()].getNumCashiers(); ii++) {
@@ -158,8 +160,8 @@ public class write {
         return new PositionsRecord(countC, countO);
     }
 
-    private void lessCash(schedule may30, double timeHolder, int count, PrintWriter writer,
-            currentPositions[] positions, int[] countC) {
+    private void lessCash(Schedule may30, double timeHolder, int count, PrintWriter writer,
+            CurrentPositions[] positions, int[] countC) {
         for (int i = may30.getStart(); i < may30.getStart() + may30.getScheduleLength() * 2; i++) {
 
             timeHolder = i - (double) count / 2;
@@ -178,8 +180,8 @@ public class write {
         }
     }
 
-    public void lessCashMoreOT(int count, schedule may30, PrintWriter writer, double timeHolder,
-            currentPositions[] positions, int[] countC, int[] countO) {
+    public void lessCashMoreOT(int count, Schedule may30, PrintWriter writer, double timeHolder,
+            CurrentPositions[] positions, int[] countC, int[] countO) {
 
         for (int i = may30.getStart(); i < may30.getStart() + may30.getScheduleLength() * 2; i++) {
 
@@ -207,7 +209,7 @@ public class write {
         }
     }
 
-    public void writeSchedule(employee[] daysShift30, currentPositions[] positions, schedule may30)
+    public void writeSchedule(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30)
             throws FileNotFoundException, UnsupportedEncodingException {
 
         double timeHolder = 0;

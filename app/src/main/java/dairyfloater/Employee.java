@@ -1,4 +1,6 @@
-public class employee {
+package dairyfloater;
+
+public class Employee {
     private String employeeName = "";
     private String employeePosition = "";
     private int employeeShiftLength = 0;
@@ -6,7 +8,7 @@ public class employee {
     private int employeeShiftEnd = 0;
     private boolean canFloat = true;
     
-        public employee(String name, String position, int shiftStart, int shiftLength) {
+        public Employee(String name, String position, int shiftStart, int shiftLength) {
         employeeName = name;
         employeePosition = position;
         employeeShiftLength = shiftLength;
@@ -48,7 +50,7 @@ public class employee {
         }
     }
 
-    public boolean getFloat(int time, currentPositions[] arraypos) {
+    public boolean getFloat(int time, CurrentPositions[] arraypos) {
         if (arraypos[time].getCashier().contains(employeeName) || arraypos[time].getOrderTaker().contains(employeeName)) {
             return false;
         }

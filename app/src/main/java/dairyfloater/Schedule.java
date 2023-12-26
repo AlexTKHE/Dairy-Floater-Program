@@ -1,10 +1,12 @@
-public class schedule {
+package dairyfloater;
+
+public class Schedule {
     private int startOfDay;
     private int endOfDay;
     private int numberOfLines;
     private int numberOfOrderTakers;
     private int numberOfCashiers;
-    public schedule (int startOfDay, int endOfDay, int numberOfLines) {
+    public Schedule (int startOfDay, int endOfDay, int numberOfLines) {
         this.startOfDay = startOfDay;
         this.endOfDay = endOfDay;
         this.numberOfLines = numberOfLines;
