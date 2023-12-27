@@ -9,6 +9,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow-y: auto;
+    margin: 0;
     /* 100% of the viewport height */
 }
 
@@ -59,11 +61,11 @@ body {
 
 .dropdown {
     position: fixed;
-    top:5%;
+    top: 5%;
     right: 3%;
-    
-    
-    
+
+
+
 }
 
 .dropdown-button {
@@ -81,7 +83,8 @@ body {
     position: absolute;
     background-color: #6C2B40;
     z-index: 1;
-    right: 0; /* Align dropdown content to the right */
+    right: 0;
+    /* Align dropdown content to the right */
 }
 
 .dropdown-content a {
@@ -102,6 +105,22 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#callApiButtonWithNumber {
+
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6C2B40;
+    color: #EBD9B0;
+    border: 2px solid #EBD9B0;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 /* static/static.css */
 

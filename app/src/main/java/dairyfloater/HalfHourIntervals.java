@@ -3,7 +3,29 @@ import java.io.UnsupportedEncodingException;
 import java.io.FileNotFoundException;
 
 public class HalfHourIntervals {
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public String createSchedule(int numberOfEmployees) {
+        Randomize random = new Randomize();
+        Employee[] daysShift30 = random.createEmployees(numberOfEmployees);
+        String total = "";
+        for (int x = 0; x < daysShift30.length; x++) {
+            String employeeName = daysShift30[x].getName();
+            if (daysShift30[x].getShiftStart() < 13 && daysShift30[x].getShiftEnd() < 13) {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + daysShift30[x].getShiftStart() +
+                        "-" + daysShift30[x].getShiftEnd() + ". ");
+            } else if (daysShift30[x].getShiftStart() < 13 && daysShift30[x].getShiftEnd() >= 13) {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + daysShift30[x].getShiftStart() +
+                        "-" + (daysShift30[x].getShiftEnd() - 12) + ". ");
+            } else {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + (daysShift30[x].getShiftStart() - 12) +
+                        "-" + (daysShift30[x].getShiftEnd() - 12) + ". ");
+            }
+        }
+        return total;
+    }
+    public void createRotations() throws FileNotFoundException, UnsupportedEncodingException {
 
         // Vars
         Schedule may30 = new Schedule(14, 21, 2);

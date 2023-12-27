@@ -14,16 +14,28 @@ public class App {
     }
 
     public static void main(String[] args) {
+
         
+
         staticFiles.location("/public");
         port(8080);
         get("/test", (req, res) -> {
             res.redirect("index.html");
-        return null;
+            return null;
         });
 
         Spark.post("/api/message", (req, res) -> {
-            return "Hi, Kyle, this API call worked";
+            return "Hi, Kirk, this API call worked";
         });
-       }
+
+        Spark.post("/number/employees", (req, res) -> {
+            // Retrieve the value of 'n' from the request
+            int n = Integer.parseInt(req.queryParams("n"));
+
+            // Use 'n' as needed in your HalfHourIntervals or other logic
+            HalfHourIntervals schedule = new HalfHourIntervals();
+            return schedule.createSchedule(n);
+            // return "Alli, Station Manager, 6-9.";
+        });
+    }
 }
