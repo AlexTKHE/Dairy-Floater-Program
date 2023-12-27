@@ -21,18 +21,34 @@ document.getElementById("openRotation").addEventListener("click", function() {
     window.location.href = "result.html";
 });
 
-document.getElementById("callApiButton").addEventListener("click", function() {
-    
-    fetch("/api/result", {
-        method: "POST",
-    })
-    .then(response => response.text())
-    .then(data => {
-        
-        console.log("working");
-        document.getElementById("apiResponse").innerText = data;
-    })
-    .catch(error => {
-        console.error("Error:", error);
+document.addEventListener('DOMContentLoaded', function () {
+    const callApiButton = document.getElementById('callApiButton');
+    const apiResponseContainer = document.getElementById('apiResponse');
+
+    callApiButton.addEventListener('click', function () {
+        // Replace with your API endpoint
+        const apiUrl = '/api/message';
+
+        // Customize headers if needed (e.g., for authentication)
+        const headers = {
+            'Content-Type': 'application/json' // Adjust based on the API requirements
+        };
+
+        fetch(apiUrl, { method: 'POST', headers: headers })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log('API Response:', data);
+                // Update the content on the page with the API response
+                apiResponseContainer.innerHTML = `API Response: ${data}`;
+            })
+            .catch(error => {
+                console.error('API Error:', error);
+                // Handle errors, e.g., display an error message to the user
+            });
     });
 });

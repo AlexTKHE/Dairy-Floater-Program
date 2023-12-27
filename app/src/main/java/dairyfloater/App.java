@@ -9,17 +9,21 @@ import spark.Spark;
 
 public class App {
 
+    public String getGreeting() {
+        return "yes";
+    }
+
     public static void main(String[] args) {
         
         staticFiles.location("/public");
-        port(8000);
+        port(8080);
         get("/test", (req, res) -> {
             res.redirect("index.html");
         return null;
         });
 
         Spark.post("/api/message", (req, res) -> {
-            return "Hi, this API call worked";
+            return "Hi, Kyle, this API call worked";
         });
        }
 }
