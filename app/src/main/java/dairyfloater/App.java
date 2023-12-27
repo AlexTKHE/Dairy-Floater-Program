@@ -5,11 +5,21 @@ package dairyfloater;
 
 import static spark.Spark.*;
 
+import spark.Spark;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        staticFiles.location("/public");
         port(8000);
-        staticFileLocation("static");
-        get("/test", (req, res) -> "Hello alex");
+        get("/test", (req, res) -> {
+            res.redirect("index.html");
+        return null;
+        });
+
+        Spark.post("/api/message", (req, res) -> {
+            return "Hi, this API call worked";
+        });
        }
 }
