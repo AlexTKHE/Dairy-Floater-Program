@@ -15,7 +15,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        
+        HalfHourIntervals schedule = new HalfHourIntervals();
 
         staticFiles.location("/public");
         port(8080);
@@ -33,7 +33,7 @@ public class App {
             int n = Integer.parseInt(req.queryParams("n"));
 
             // Use 'n' as needed in your HalfHourIntervals or other logic
-            HalfHourIntervals schedule = new HalfHourIntervals();
+            
             return schedule.createSchedule(n);
             // return "Alli, Station Manager, 6-9.";
         });

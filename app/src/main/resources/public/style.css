@@ -1,17 +1,16 @@
 /* static/static.css */
 
 body {
+    position: absolute;
     background-color: #EBD9B0;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow-y: auto;
-    margin: 0;
-    /* 100% of the viewport height */
+    overflow-y: scroll;
+    z-index: 0; /* Set a base z-index value */
 }
 
 .centered-boxTitle {
@@ -20,16 +19,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    /* Set the desired width */
     height: 15%;
-    /* Set the desired height */
-    /*  border: 2px solid #007bff; /* Outline color */
     padding: 20px;
-    /* Optional: Add padding inside the box */
     text-align: center;
-    /* Center text horizontally */
     line-height: 1.5;
-    /* Optional: Set line height for better vertical centering */
+    z-index: 1;
 }
 
 .curved-boxTitle {
@@ -41,6 +35,7 @@ body {
     background-color: #6C2B40;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
+    z-index: 1;
 }
 
 .title-text {
@@ -57,15 +52,14 @@ body {
     height: 20%;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
+    z-index: 1;
 }
 
 .dropdown {
     position: fixed;
     top: 5%;
     right: 3%;
-
-
-
+    z-index: 2; /* Adjust as needed */
 }
 
 .dropdown-button {
@@ -76,15 +70,15 @@ body {
     padding: 15px 40px;
     font-size: 16px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #6C2B40;
-    z-index: 1;
+    z-index: 4; /* Adjust as needed */
     right: 0;
-    /* Align dropdown content to the right */
 }
 
 .dropdown-content a {
@@ -94,20 +88,34 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    z-index: 4;
 }
 
 .dropdown-content a:hover {
     background-color: #6C2B40;
     border: 2px solid #EBD9B0;
     border-radius: 2%;
+    z-index: 4;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 4;
+}
+
+.awesome-text {
+    position: fixed;
+    top: 25%;
+    left: 2.5%;
+    width: 17.5%;
+    text-align: center;
+    color: #6C2B40;
+    font-size: 20px;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 #callApiButtonWithNumber {
-
     position: fixed;
     top: 25%;
     left: 50%;
@@ -119,9 +127,98 @@ body {
     padding: 15px 40px;
     font-size: 16px;
     cursor: pointer;
+    z-index: 1;
 }
 
+#apiInput {
+    background-color: #EBD9B0;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5%;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 1;
+}
 
-/* static/static.css */
+label[for="numInput"] {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    color: #6C2B40;
+    margin-bottom: 8px;
+}
 
-/* ... (other styles) ... */
+#numInput {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    width: 13%;
+    font-size: 26px;
+    color: #EBD9B0;
+    background-color: #6C2B40;
+}
+
+#callApiWithNumber {
+    background-color: transparent;
+    font-size: 26px;
+    color: #6C2B40;
+    border: 3px solid #6C2B40;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.apiCalls {
+    position: relative;
+    transform: translateX(-50%);
+    left: 100%;
+    top: 300px;
+    width: 400%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: #6C2B40;
+    z-index: 5; /* Set a high z-index value */
+}
+
+#apiResponse1 {
+    white-space: nowrap;
+    color: #6C2B40;
+    font-size: 20px;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+#apiResponse2 {
+    white-space: nowrap;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: #6C2B40;
+    font-size: 20px;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+#apiResponse3 {
+    white-space: nowrap;
+    color: #6C2B40;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    z-index: 100;
+}
+
+#hiddenButton {
+    right: 5%;
+    top: 22.25%;
+    position: fixed;
+    background-color: transparent;
+    font-size: 26px;
+    color: #6C2B40;
+    border: 3px solid #6C2B40;
+    border-radius: 8px;
+    z-index: 1;
+}
