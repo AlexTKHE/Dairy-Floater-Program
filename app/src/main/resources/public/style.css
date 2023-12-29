@@ -10,7 +10,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
-    z-index: 0; /* Set a base z-index value */
+    z-index: 0;
+    /* Set a base z-index value */
 }
 
 .centered-boxTitle {
@@ -59,7 +60,8 @@ body {
     position: fixed;
     top: 5%;
     right: 3%;
-    z-index: 2; /* Adjust as needed */
+    z-index: 2;
+    /* Adjust as needed */
 }
 
 .dropdown-button {
@@ -77,7 +79,8 @@ body {
     display: none;
     position: absolute;
     background-color: #6C2B40;
-    z-index: 4; /* Adjust as needed */
+    z-index: 4;
+    /* Adjust as needed */
     right: 0;
 }
 
@@ -130,7 +133,7 @@ body {
     z-index: 1;
 }
 
-#apiInput {
+.apiInput {
     background-color: #EBD9B0;
     position: fixed;
     top: 20%;
@@ -181,7 +184,8 @@ label[for="numInput"] {
     margin-bottom: 20px;
     justify-content: center;
     color: #6C2B40;
-    z-index: 5; /* Set a high z-index value */
+    z-index: 5;
+    /* Set a high z-index value */
 }
 
 #apiResponse1 {
@@ -221,4 +225,100 @@ label[for="numInput"] {
     border: 3px solid #6C2B40;
     border-radius: 8px;
     z-index: 1;
+}
+
+#instructions {
+    display: none;
+}
+
+#rotationsInput {
+    background-color: #EBD9B0;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 0;
+    display: flex; /* Add display: flex; */
+}
+
+
+label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[for="cashiersInput"], label[for="orderTakersInput"] {
+    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6C2B40;
+    margin-bottom: 8px;
+}
+
+#lineInput, #startInput, #endInput, #cashiersInput, #orderTakersInput {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    width: 30%; /* Set the width to 100% to fill the container */
+    font-size: 26px;
+    color: #EBD9B0;
+    background-color: #6C2B40;
+}
+
+#createRotationsButtonContainer {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#createRotationsButton {
+    margin-top: 10px; /* Adjusted margin for spacing */
+    background-color: #6C2B40;
+    color: #EBD9B0;
+    border: 2px solid #EBD9B0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 20px; /* Adjusted margin for spacing */
+}
+
+.rotations {
+    top: 20%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%);
+}
+
+#rotations1 {
+    font-size: 25px;
+}
+#checker{
+    z-index: 16;
+    font-size: 25px;
+}
+
+#resetDiv {
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#resetButton {
+    display: none;
+    background-color: #6C2B40;
+    color: #EBD9B0;
+    border: 2px solid #EBD9B0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 5;
+   
+    z-index: 5;
+   
 }

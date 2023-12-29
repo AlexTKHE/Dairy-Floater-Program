@@ -11,8 +11,8 @@
 </head>
 
 <body>
-     <!-- Dairy Header -->
-    
+    <!-- Dairy Header -->
+
 
     <div class="curved-boxTitle"></div>
     <div class="centered-boxTitle">
@@ -20,8 +20,8 @@
         <h1 class="title-text">Meadowlark Dairy<br>Rotation Floater Program</h1>
 
     </div>
-    <div class = larryCow>
-    <img src="images/dairyLarry.pdf" alt="Dairy Cow" width = 50%>
+    <div class=larryCow>
+        <img src="images/dairyLarry.pdf" alt="Dairy Cow" width=50%>
     </div>
 
     <div class="dropdown">
@@ -32,10 +32,42 @@
         </div>
     </div>
 
-    
+
     <!-- end of dairy header-->
 
-    <h1>you are in Result</h1>
+
+    <div id="rotationsInput">
+        <div id="lineInputDiv">
+            <label for="lineInput">Number Of Lines:</label>
+            <input type="number" id="lineInput" name="numInput" oninput="validateNumericInput(this)">
+        </div>
+        <div id="startInputDiv">
+            <label for="startInput">Start Of Rotations:</label>
+            <input type="number" id="startInput" name="numInput" oninput="validateNumericInput(this)">
+        </div>
+        <div id="endInputDiv">
+            <label for="endInput">End Of Rotations:</label>
+            <input type="number" id="endInput" name="numInput" oninput="validateNumericInput(this)">
+        </div>
+        <div id="cashiersInputDiv">
+            <label for="cashiersInput">Cashiers:</label>
+            <input type="number" id="cashiersInput" name="numInput" oninput="validateNumericInput(this)">
+        </div>
+        <div id="orderTakersInputDiv">
+            <label for="orderTakersInput">Order Takers:</label>
+            <input type="number" id="orderTakersInput" name="numInput" oninput="validateNumericInput(this)">
+        </div>
+    </div>
+    <div id="createRotationsButtonContainer">
+        <button id="createRotationsButton">Create Rotations</button>
+    </div>
+
+    <div class="rotations">
+        <div id="roatitions1">
+           <p>This is a Bannana.</p> 
+        </div>
+    </div>
+
 
 
     <!-- Your page content goes here -->

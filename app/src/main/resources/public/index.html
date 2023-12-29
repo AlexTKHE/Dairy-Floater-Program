@@ -38,26 +38,32 @@
         </div>
     </div>
 
-   
+
     <!--end of dairy header-->
 
     <!-- Your page content goes here -->
 
-
+    <div id="resetDiv">
+        <button id="resetButton">Reset</button>
+    </div>
     <div class="awesome-text">
-        <p>Disclaimer: This site is still in heavy development, the reason that it randomizes employees is because I
+        <p id="disclaimer">Disclaimer: This site is still in heavy development, the reason that it randomizes employees
+            is because I
             dont think I have access on When to Work to export the file. Also there are some bugs with the rotation
             sheet because sometimes the generated data is faulty.
             When I gain access I can reconfigure everything to take that data in. If there is anything else that you
             would like let me know! Merry Christams!
         </p>
+        <p id="instructions">Note: When writing in new employees and/or editing a current one make sure their format is
+            in Name (Can be first and/or last),
+            Position, Hours working (timestart-timefinish).</p>
     </div>
 
-    <div id="apiInput">
+    <div class="apiInput">
         <label for="numInput">Number Of Employees:</label>
         <!-- Use type="number" to restrict input to numeric values -->
         <input type="number" id="numInput" name="numInput" oninput="validateNumericInput(this)">
-    
+
         <button id="callApiWithNumber">Create Schedule</button>
     </div>
 
@@ -69,7 +75,7 @@
         <div id="apiResponse3" contenteditable="true"></div>
     </div>
 
-    
+
 
     <script src="script.js"></script>
 </body>

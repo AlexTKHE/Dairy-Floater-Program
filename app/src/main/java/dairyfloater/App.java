@@ -37,5 +37,9 @@ public class App {
             return schedule.createSchedule(n);
             // return "Alli, Station Manager, 6-9.";
         });
+
+        Spark.post("/api/createRotaions", (req, res) -> {
+            return "this request worked";
+        });
     }
 }
