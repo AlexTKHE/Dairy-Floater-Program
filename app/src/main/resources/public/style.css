@@ -242,11 +242,16 @@ label[for="numInput"] {
     text-align: center;
     line-height: 1.5;
     z-index: 0;
-    display: flex; /* Add display: flex; */
+    display: flex;
+    /* Add display: flex; */
 }
 
 
-label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[for="cashiersInput"], label[for="orderTakersInput"] {
+label[for="lineInput"],
+label[for="startInput"],
+label[for="endInput"],
+label[for="cashiersInput"],
+label[for="orderTakersInput"] {
     font-family: 'Comic Sans MS', cursive;
     font-family: 'Comic Sans MS', cursive;
     font-size: 20px;
@@ -255,11 +260,16 @@ label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[fo
     margin-bottom: 8px;
 }
 
-#lineInput, #startInput, #endInput, #cashiersInput, #orderTakersInput {
+#lineInput,
+#startInput,
+#endInput,
+#cashiersInput,
+#orderTakersInput {
     appearance: textfield;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
-    width: 30%; /* Set the width to 100% to fill the container */
+    width: 30%;
+    /* Set the width to 100% to fill the container */
     font-size: 26px;
     color: #EBD9B0;
     background-color: #6C2B40;
@@ -273,7 +283,8 @@ label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[fo
 }
 
 #createRotationsButton {
-    margin-top: 10px; /* Adjusted margin for spacing */
+    margin-top: 10px;
+    /* Adjusted margin for spacing */
     background-color: #6C2B40;
     color: #EBD9B0;
     border: 2px solid #EBD9B0;
@@ -282,20 +293,28 @@ label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[fo
     font-size: 16px;
     cursor: pointer;
     z-index: 5;
-    margin-left: 20px; /* Adjusted margin for spacing */
+    margin-left: 20px;
+    /* Adjusted margin for spacing */
 }
 
 .rotations {
-    top: 20%;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%);
+        position: fixed;
+        top: 87%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        z-index: 1000;
+        color: #6C2B40;
+        overflow-y: auto;
+        max-height: 100%;
 }
 
 #rotations1 {
-    font-size: 25px;
+    position: relative;
 }
-#checker{
+
+
+#checker {
     z-index: 16;
     font-size: 25px;
 }
@@ -318,7 +337,7 @@ label[for="lineInput"], label[for="startInput"], label[for="endInput"], label[fo
     font-size: 16px;
     cursor: pointer;
     z-index: 5;
-   
+
     z-index: 5;
-   
+
 }

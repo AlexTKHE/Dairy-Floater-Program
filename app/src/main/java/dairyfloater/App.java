@@ -38,7 +38,7 @@ public class App {
             // return "Alli, Station Manager, 6-9.";
         });
 
-        Spark.post("/api/createRotaions", (req, res) -> {
+        Spark.post("/api/createRotations", (req, res) -> {
             return "this request worked";
         });
     }

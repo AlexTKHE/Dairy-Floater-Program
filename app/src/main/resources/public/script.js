@@ -1,4 +1,3 @@
-
 // COOKIES
 
 function setCookie(name, value, days) {
@@ -11,7 +10,6 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + value + expires + "; path=/";
 }
 
-// Function to get a cookie by name
 function getCookie(name) {
     var nameEQ = name + "=";
     var cookies = document.cookie.split(';');
@@ -35,21 +33,16 @@ function eraseCookie(name) {
 // END OF COOKIES
 
 
-
 function validateNumericInput(inputElement) {
-    // Get the value of the input element
     const inputValue = inputElement.value.trim();
 
-    // Check if the input value is a valid number
     if (!/^\d+$/.test(inputValue)) {
-        // If not a number, clear the input value
         inputElement.value = '';
         alert('Please enter a valid number.');
     }
 }
 
 function showHiddenButton() {
-    // Show the hidden button by setting display to 'inline-block'
     var hiddenButton = document.getElementById('hiddenButton');
     hiddenButton.style.display = 'inline-block';
 }
@@ -63,28 +56,12 @@ function showInstructions() {
     document.getElementById('resetButton').style.display = 'inline-block';
 }
 
-document.getElementById("openSchedule").addEventListener("click", function () {
-    window.location.href = "index.html";
-});
-
-document.getElementById("openRotation").addEventListener("click", function () {
-    window.location.href = "result.html";
-});
-
 function createSchedule() {
-
-    // Replace with your API endpoint
     const apiUrl = '/number/employees';
-
-    // Get the input value
     const numInputValue = document.getElementById('numInput').value;
-
-    // Customize headers if needed (e.g., for authentication)
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded'
     };
-
-    // Prepare the data to send to the backend
     const data = `n=${numInputValue}`;
 
     fetch(apiUrl, {
@@ -99,9 +76,6 @@ function createSchedule() {
             return response.text();
         })
         .then(data => {
-            // console.log('API Response:', data);
-            // // Update the content on the page with the API response
-            // document.getElementById('apiResponse').innerHTML = `API Response: ${data}`;
             const myArray = data.split('.');
             const spacedArray1 = [];
             const spacedArray2 = [];
@@ -133,17 +107,110 @@ function createSchedule() {
         })
         .catch(error => {
             console.error('API Error:', error);
-            // Handle errors, e.g., display an error message to the user
+        });
+}
+
+function createRotations() {
+    const apiUrl = '/api/createRotations';
+    const headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    };
+    const schedule = [
+        getCookie('schedule1'),
+        getCookie('schedule2'),
+        getCookie('schedule3')
+    ].join(', ');
+    const lineInputValue = document.getElementById('lineInput').value;
+    const startInputValue = document.getElementById('startInput').value;
+    const endInputValue = document.getElementById('endInput').value;
+
+    let cashiersInputValue = lineInputValue;
+    let orderTakersInputValue = lineInputValue;
+
+    if (document.getElementById('cashiersInput').value !== null) {
+        cashiersInputValue = document.getElementById('cashiersInput').value;
+    }
+
+    if (document.getElementById('orderTakersInput').value !== null) {
+        orderTakersInputValue = document.getElementById('orderTakersInput').value;
+    }
+
+    const data = {
+        schedule: schedule,
+        lineInput: lineInputValue,
+        startInput: startInputValue,
+        endInput: endInputValue,
+        cashiersInput: cashiersInputValue,
+        orderTakersInput: orderTakersInputValue
+    };
+
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(data)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(result => {
+            alert('This works!');
+            document.getElementById('rotations1').innerHTML = 'Hello, I am working!';
+        })
+        .catch(error => {
+            console.error('Error:', error);
         });
 }
 
 
-document.getElementById("callApiWithNumber").addEventListener("click", function () {
+function callApiWithNumber() {
     createSchedule();
     showHiddenButton();
     hideDisclaimer();
     showInstructions();
+}
+
+function openRotations() {
+    window.location.href = "result.html";
+}
+
+function isCookieTrue(cookieName) {
+    const cookieValue = getCookie(cookieName);
+    return cookieValue === 'true';
+}
+
+function resetCookiesAndReload() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+    location.reload();
+}
+
+function createRotationsClick() {
+    alert('22');
+    createRotations();
+}
+
+
+
+// event listners
+
+
+
+document.getElementById("openSchedule").addEventListener("click", function () {
+    window.location.href = "index.html";
 });
+
+document.getElementById("openRotation").addEventListener("click", openRotations);
+
+document.getElementById("callApiWithNumber").addEventListener("click", callApiWithNumber);
 
 document.getElementById("numInput").addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
@@ -154,53 +221,26 @@ document.getElementById("numInput").addEventListener("keyup", function (event) {
     }
 });
 
-function openRotations() {
-    window.location.href = "result.html";
-}
-
-function isCookieTrue(cookieName) {
-    const cookieValue = getCookie(cookieName);
-    
-    // Check if the cookie value is 'true'
-    return cookieValue === 'true';
-}
-
 document.addEventListener('DOMContentLoaded', function () {
-    
-
     const schedule1 = getCookie('schedule1');
     const schedule2 = getCookie('schedule2');
     const schedule3 = getCookie('schedule3');
 
-    if(schedule1 != null && schedule2 != null && schedule3 != null) {
+    if (schedule1 != null && schedule2 != null && schedule3 != null) {
         showHiddenButton();
         hideDisclaimer();
         showInstructions();
-    // Set default values if cookies are not present
-    const defaultSchedule1 = 'Default Schedule 1';
-    const defaultSchedule2 = 'Default Schedule 2';
-    const defaultSchedule3 = 'Default Schedule 3';
+        const defaultSchedule1 = 'Default Schedule 1';
+        const defaultSchedule2 = 'Default Schedule 2';
+        const defaultSchedule3 = 'Default Schedule 3';
 
-    document.getElementById('apiResponse1').innerHTML = schedule1 || defaultSchedule1;
-    document.getElementById('apiResponse2').innerHTML = schedule2 || defaultSchedule2;
-    document.getElementById('apiResponse3').innerHTML = schedule3 || defaultSchedule3;
+        document.getElementById('apiResponse1').innerHTML = schedule1 || defaultSchedule1;
+        document.getElementById('apiResponse2').innerHTML = schedule2 || defaultSchedule2;
+        document.getElementById('apiResponse3').innerHTML = schedule3 || defaultSchedule3;
     }
 });
 
-document.getElementById("resetButton").addEventListener("click", function() {
-    var cookies = document.cookie.split(";");
+document.getElementById("resetButton").addEventListener("click", resetCookiesAndReload);
 
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        var eqPos = cookie.indexOf("=");
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    }
-    location.reload();
-});
-
-
-
-
-
+document.getElementById
 
