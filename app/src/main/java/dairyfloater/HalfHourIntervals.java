@@ -25,21 +25,20 @@ public class HalfHourIntervals {
         }
         return total;
     }
-    public void createRotations() throws FileNotFoundException, UnsupportedEncodingException {
+    public void createRotations(Employee[] daysShift30, int startInput, int endInput, int linesInput, int cashiersInput, int orderTakersInput) throws FileNotFoundException, UnsupportedEncodingException {
 
         // Vars
-        Schedule may30 = new Schedule(14, 21, 2);
+        Schedule may30 = new Schedule(startInput, endInput, linesInput);
 
         // assumption that there will never be more cashiers than lines
         // assumption that there will never be less order takers than lines
         
-        may30.changeNumRotations(1, 3);
+        may30.changeNumRotations(cashiersInput, orderTakersInput);
 
 
 
         // using random class and methods
         Randomize random = new Randomize();
-        Employee[] daysShift30 = random.createEmployees(45);
         CurrentPositions[] positions = new CurrentPositions[(may30.getEnd() - may30.getStart()) * 2];
         int count = 0;
 

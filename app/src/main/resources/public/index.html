@@ -62,7 +62,7 @@
     <div class="apiInput">
         <label for="numInput">Number Of Employees:</label>
         <!-- Use type="number" to restrict input to numeric values -->
-        <input type="number" id="numInput" name="numInput" oninput="validateNumericInput(this)">
+        <input type="number" id="numInput" name="numInput" onkeydown="validateNumericInput(event)">
 
         <button id="callApiWithNumber">Create Schedule</button>
     </div>
@@ -70,9 +70,9 @@
     <button id="hiddenButton" style="display: none;" onclick="openRotations()">Rotations -></button>
 
     <div class="apiCalls">
-        <div id="apiResponse1" contenteditable="true"></div>
-        <div id="apiResponse2" contenteditable="true"></div>
-        <div id="apiResponse3" contenteditable="true"></div>
+        <div id="apiResponse1" contenteditable="true" onblur="setApiResponseOnes()"></div>
+        <div id="apiResponse2" contenteditable="true" onblur="setApiResponseTwos()"></div>
+        <div id="apiResponse3" contenteditable="true" onblur="setApiResponseThrees()"></div>
     </div>
 
     <button id="maniac">Mainiac</button>

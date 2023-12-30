@@ -299,14 +299,15 @@ label[for="orderTakersInput"] {
 
 .rotations {
         position: fixed;
-        top: 87%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 20px;
         z-index: 1000;
         color: #6C2B40;
         overflow-y: auto;
-        max-height: 100%;
+        max-height: 50%;
+        
 }
 
 #rotations1 {

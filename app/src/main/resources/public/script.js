@@ -33,12 +33,15 @@ function eraseCookie(name) {
 // END OF COOKIES
 
 
-function validateNumericInput(inputElement) {
-    const inputValue = inputElement.value.trim();
 
-    if (!/^\d+$/.test(inputValue)) {
-        inputElement.value = '';
-        alert('Please enter a valid number.');
+
+function validateNumericInput(event) {
+    const allowedKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'Backspace'];
+
+    // Check if the pressed key is in the allowedKeys array
+    if (!allowedKeys.includes(event.key)) {
+        // Prevent the input if the key is not allowed
+        event.preventDefault();
     }
 }
 
@@ -81,21 +84,43 @@ function createSchedule() {
             const spacedArray2 = [];
             const spacedArray3 = [];
             let x = 0;
+            let c = myArray.length
 
             for (i = 0; i < myArray.length; i++) {
                 if (x == 0) {
                     spacedArray1.push(myArray[i]);
+
                     x++;
                 }
                 else if (x == 1) {
                     spacedArray2.push(myArray[i]);
+
                     x++;
                 }
                 else {
                     spacedArray3.push(myArray[i]);
+
                     x = 0;
                 }
+
             }
+            if (c - Math.trunc(c / 3) * 3 == 0) {
+                spacedArray1[spacedArray1.length - 1] += ".";
+                spacedArray2[spacedArray2.length - 1] += ".";
+            } else if (c - Math.trunc(c / 3) * 3 == 1) {
+                spacedArray3[spacedArray3.length - 1] += ".";
+                spacedArray2[spacedArray2.length - 1] += ".";
+            } else {
+                spacedArray1[spacedArray1.length - 1] += ".";
+                spacedArray3[spacedArray3.length - 1] += ".";
+            }
+
+            spacedArray1[spacedArray1.length - 1] += "<br>";
+            spacedArray2[spacedArray2.length - 1] += "<br>";
+
+
+
+
 
             setCookie('schedule1', spacedArray1.join(".<br>"), 1);
             setCookie('schedule2', spacedArray2.join(".<br>"), 1);
@@ -110,6 +135,21 @@ function createSchedule() {
         });
 }
 
+function setApiResponseOnes() {
+    const apiResponseContent = apiResponse1.innerHTML;
+    setCookie('schedule1', apiResponseContent, 1);
+}
+
+function setApiResponseTwos() {
+    const apiResponseContent = apiResponse2.innerHTML;
+    setCookie('schedule2', apiResponseContent, 1);
+}
+
+function setApiResponseThrees() {
+    const apiResponseContent = apiResponse3.innerHTML;
+    setCookie('schedule3', apiResponseContent, 1);
+}
+
 function createRotations() {
     const apiUrl = '/api/createRotations';
     const headers = {
@@ -119,7 +159,7 @@ function createRotations() {
         getCookie('schedule1'),
         getCookie('schedule2'),
         getCookie('schedule3')
-    ].join(', ');
+    ].join('');
     const lineInputValue = document.getElementById('lineInput').value;
     const startInputValue = document.getElementById('startInput').value;
     const endInputValue = document.getElementById('endInput').value;
@@ -135,19 +175,20 @@ function createRotations() {
         orderTakersInputValue = document.getElementById('orderTakersInput').value;
     }
 
-    const data = {
-        schedule: schedule,
-        lineInput: lineInputValue,
-        startInput: startInputValue,
-        endInput: endInputValue,
-        cashiersInput: cashiersInputValue,
-        orderTakersInput: orderTakersInputValue
-    };
+    // const data = `n=${schedule}~${lineInputValue}~${startInputValue}~${endInputValue}~${cashiersInputValue}~${orderTakersInputValue}`;
+    // const data = `n=${schedule}` + `~${lineInputValue}` + `~${startInputValue}`+ `~${endInputValue}` + `~${cashiersInputValue}` + `~${orderTakersInputValue}`;
+    const data = new FormData();
+    data.append('schedule', schedule);
+    data.append('lineInput', lineInputValue);
+    data.append('startInput', startInputValue);
+    data.append('endInput', endInputValue);
+    data.append('cashiersInput', cashiersInputValue);
+    data.append('orderTakersInput', orderTakersInputValue);
 
     fetch(apiUrl, {
         method: 'POST',
         headers: headers,
-        body: JSON.stringify(data)
+        body: data
     })
         .then(response => {
             if (!response.ok) {
@@ -156,8 +197,7 @@ function createRotations() {
             return response.text();
         })
         .then(result => {
-            alert('This works!');
-            document.getElementById('rotations1').innerHTML = 'Hello, I am working!';
+            document.getElementById('rotations1').innerHTML = result;
         })
         .catch(error => {
             console.error('Error:', error);
@@ -194,7 +234,6 @@ function resetCookiesAndReload() {
 }
 
 function createRotationsClick() {
-    alert('22');
     createRotations();
 }
 

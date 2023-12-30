@@ -1,0 +1,67 @@
+The schedule for the day in the format of (Name, Position, shift start val - shift end val):
+Jeff, Manager, 2-6.
+Jesse, Rotation Floater, 2-6.
+Sabina, Rotation Floater, 6-9.
+Ruthy, Rotation Floater, 8-2.
+Andree, Rotation Floater, 12-4.
+Maiga, Station Manager, 12-4.
+Sheeree, Rotation Floater, 2-9.
+Jennine, Rotation Floater, 6-9.
+yle, Rotation Floater, 6-9.
+Rebe, Station Manager, 2-9.
+Malynda, Rotation Floater, 2-6.
+Sharona, Rotation Floater, 8-2.
+Helsa, Manager, 12-4.
+Emili, Rotation Floater, 6-9.
+Rikki, Rotation Floater, 6-9.
+Gerrilee, Order Filler, 2-6.
+irk, Rotation Floater, 2-9.
+Datha, Rotation Floater, 6-9.
+Mandi, Rotation Floater, 6-9.
+Rozina, Rotation Floater, 11-4.
+Dionne, Order Filler, 12-4.
+Melitta, Rotation Floater, 2-6.
+Selma, Rotation Floater, 2-9.
+
+
+
+
+Rotation Schedule for the day will be: 
+ 
+ 
+Walk-ups: 
+ 
+
+2:00-2:30 PM:         Cashier   1:         Sheeree   Order Taker   1:         Malynda   
+2:30-3:00 PM:         Cashier   1:          Andree   Order Taker   1:         Sheeree   
+3:00-3:30 PM:         Cashier   1:           Jesse   Order Taker   1:         Malynda   
+3:30-4:00 PM:         Cashier   1:          Andree   Order Taker   1:         Sheeree   
+4:00-4:30 PM:         Cashier   1:           Selma   Order Taker   1:         Melitta   
+4:30-5:00 PM:         Cashier   1:         Malynda   Order Taker   1:         Melitta   
+5:00-5:30 PM:         Cashier   1:             irk   Order Taker   1:           Jesse   
+5:30-6:00 PM:         Cashier   1:             irk   Order Taker   1:           Selma   
+6:00-6:30 PM:         Cashier   1:         Sheeree   Order Taker   1:          Sabina   
+6:30-7:00 PM:         Cashier   1:           Emili   Order Taker   1:           Selma   
+7:00-7:30 PM:         Cashier   1:           Datha   Order Taker   1:         Jennine   
+7:30-8:00 PM:         Cashier   1:             yle   Order Taker   1:          Sabina   
+8:00-8:30 PM:         Cashier   1:           Emili   Order Taker   1:         Jennine   
+8:30-9:00 PM:         Cashier   1:           Rikki   Order Taker   1:           Selma   
+ 
+ 
+Driveway: 
+ 
+
+2:00-2:30 PM:         Cashier   1:         Melitta   Order Taker   1:             irk   
+2:30-3:00 PM:         Cashier   1:           Jesse   Order Taker   1:           Selma   
+3:00-3:30 PM:         Cashier   1:           Selma   Order Taker   1:             irk   
+3:30-4:00 PM:         Cashier   1:             irk   Order Taker   1:         Malynda   
+4:00-4:30 PM:         Cashier   1:           Jesse   Order Taker   1:         Malynda   
+4:30-5:00 PM:         Cashier   1:             irk   Order Taker   1:           Selma   
+5:00-5:30 PM:         Cashier   1:         Malynda   Order Taker   1:         Melitta   
+5:30-6:00 PM:         Cashier   1:         Sheeree   Order Taker   1:         Melitta   
+6:00-6:30 PM:         Cashier   1:           Emili   Order Taker   1:           Selma   
+6:30-7:00 PM:         Cashier   1:           Mandi   Order Taker   1:         Sheeree   
+7:00-7:30 PM:         Cashier   1:         Sheeree   Order Taker   1:           Emili   
+7:30-8:00 PM:         Cashier   1:           Rikki   Order Taker   1:           Selma   
+8:00-8:30 PM:         Cashier   1:           Datha   Order Taker   1:          Sabina   
+8:30-9:00 PM:         Cashier   1:             yle   Order Taker   1:           Mandi   
