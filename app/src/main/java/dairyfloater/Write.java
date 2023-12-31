@@ -209,6 +209,12 @@ public class Write {
         }
     }
 
+    public void write(String n) throws FileNotFoundException, UnsupportedEncodingException {
+        PrintWriter writer = new PrintWriter("test.txt", "UTF-8");
+        writer.print(n);
+        writer.close();
+    }
+
     public void writeSchedule(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30)
             throws FileNotFoundException, UnsupportedEncodingException {
 

@@ -8,12 +8,12 @@ public class Employee {
     private int employeeShiftEnd = 0;
     private boolean canFloat = true;
     
-        public Employee(String name, String position, int shiftStart, int shiftLength) {
+        public Employee(String name, String position, int shiftStart, int shiftEnd) {
         employeeName = name;
         employeePosition = position;
-        employeeShiftLength = shiftLength;
+        employeeShiftLength = shiftEnd-shiftStart;
         employeeShiftStart = shiftStart;
-        employeeShiftEnd = shiftLength+shiftStart;
+        employeeShiftEnd = shiftEnd;
     }
     public String getName() {
         return employeeName;

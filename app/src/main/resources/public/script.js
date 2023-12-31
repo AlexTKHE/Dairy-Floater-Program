@@ -35,6 +35,7 @@ function eraseCookie(name) {
 
 
 
+
 function validateNumericInput(event) {
     const allowedKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'Backspace'];
 
@@ -80,9 +81,9 @@ function createSchedule() {
         })
         .then(data => {
             const myArray = data.split('.');
-            const spacedArray1 = [];
-            const spacedArray2 = [];
-            const spacedArray3 = [];
+            let spacedArray1 = [];
+            let spacedArray2 = [];
+            let spacedArray3 = [];
             let x = 0;
             let c = myArray.length
 
@@ -107,28 +108,55 @@ function createSchedule() {
             if (c - Math.trunc(c / 3) * 3 == 0) {
                 spacedArray1[spacedArray1.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
+
             } else if (c - Math.trunc(c / 3) * 3 == 1) {
                 spacedArray3[spacedArray3.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
+
             } else {
                 spacedArray1[spacedArray1.length - 1] += ".";
                 spacedArray3[spacedArray3.length - 1] += ".";
-            }
 
+            }
             spacedArray1[spacedArray1.length - 1] += "<br>";
             spacedArray2[spacedArray2.length - 1] += "<br>";
 
+            let finalText1 = spacedArray1.join(".<br>") + "<br> ";
+            let finalText2 = spacedArray2.join(".<br>") + "<br> ";
+            let finalText3 = spacedArray3.join(".<br>") + "<br> ";
+
+            
 
 
+            // if (finalText1.substring(finalText1.length - 5).includes("<br>")) {
+            //     finalText1 = finalText1.substring(0, finalText1.length - 5) + finalText1.substring(finalText1.length - 5, finalText1.lastIndexOf("."));
+
+            // }
+            // if (finalText1.substring(finalText1.length - 5).includes("<br>")) {
+            //     finalText1 = finalText1.substring(0, finalText1.length - 5) + finalText1.substring(finalText1.length - 5, finalText1.lastIndexOf("."));
+
+            // }
+            // if (finalText2.substring(finalText2.length - 5).includes("<br>")) {
+            //     finalText2 = finalText2.substring(0, finalText2.length - 5) + finalText2.substring(finalText2.length - 5, finalText2.lastIndexOf("."));
+            // }
+            // if (finalText2.substring(finalText2.length - 5).includes("<br>")) {
+            //     finalText2 = finalText2.substring(0, finalText2.length - 5) + finalText2.substring(finalText2.length - 5, finalText2.lastIndexOf("."));
+            // }
+            // finalText1 = finalText1.trim();
+            // if (finalText1.charAt(finalText1.length - 1) !== ".") {
+            //     finalText1 += ".";
+            // }
 
 
-            setCookie('schedule1', spacedArray1.join(".<br>"), 1);
-            setCookie('schedule2', spacedArray2.join(".<br>"), 1);
-            setCookie('schedule3', spacedArray3.join(".<br>"), 1);
+           
 
-            document.getElementById('apiResponse1').innerHTML = `${spacedArray1.join(".<br>")}`;
-            document.getElementById('apiResponse2').innerHTML = `${spacedArray2.join(".<br>")}`;
-            document.getElementById('apiResponse3').innerHTML = `${spacedArray3.join(".<br>")}`;
+            setCookie('schedule1', finalText1, 1);
+            setCookie('schedule2', finalText2, 1);
+            setCookie('schedule3', finalText3, 1);
+
+            document.getElementById('apiResponse1').innerHTML = `${finalText1}`;
+            document.getElementById('apiResponse2').innerHTML = `${finalText2}`;
+            document.getElementById('apiResponse3').innerHTML = `${finalText3}`;
         })
         .catch(error => {
             console.error('API Error:', error);
@@ -159,7 +187,7 @@ function createRotations() {
         getCookie('schedule1'),
         getCookie('schedule2'),
         getCookie('schedule3')
-    ].join('');
+    ].join('');    
     const lineInputValue = document.getElementById('lineInput').value;
     const startInputValue = document.getElementById('startInput').value;
     const endInputValue = document.getElementById('endInput').value;

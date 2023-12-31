@@ -6,14 +6,20 @@ package dairyfloater;
 import static spark.Spark.*;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.Arrays;
+
+import com.google.common.base.Utf8;
 
 import spark.Spark;
 
-record dataRetrival(String schedule, int lineInput, int startInput, int endInput, int cashiersInput, int orderTakersInput) {
+record dataRetrival(String schedule, int lineInput, int startInput, int endInput, int cashiersInput,
+        int orderTakersInput) {
 };
 
 public class App {
@@ -28,31 +34,35 @@ public class App {
 
     public static dataRetrival retrive(StringBuilder body) {
         String schedule = body.toString().substring(body.toString().indexOf("schedule=") + 9).trim();
-                schedule = schedule.substring(schedule.indexOf("schedule")+9, schedule.indexOf("----"));
-                schedule =  schedule.substring(schedule.length()-4) + " " + schedule.substring(0, schedule.length()-4);
+        schedule = schedule.substring(schedule.indexOf("=\"schedule\"") + 11, schedule.indexOf("----"));
+        // schedule = schedule.substring(schedule.length()-4) + " " +
+        // schedule.substring(0, schedule.length()-4);
 
-                String lineInputS = body.toString().substring(body.toString().indexOf("name=\"lineInput\"") + 9).trim();
-                lineInputS = lineInputS.substring(lineInputS.indexOf("Input\"") + 6, lineInputS.indexOf("----"));
-                int lineInput = Integer.parseInt(lineInputS);
+        String lineInputS = body.toString().substring(body.toString().indexOf("name=\"lineInput\"") + 9).trim();
+        lineInputS = lineInputS.substring(lineInputS.indexOf("Input\"") + 6, lineInputS.indexOf("----"));
+        int lineInput = Integer.parseInt(lineInputS);
 
-                String startInputS = body.toString().substring(body.toString().indexOf("name=\"startInput\"") + 9).trim();
-                startInputS = startInputS.substring(startInputS.indexOf("Input\"") + 6, startInputS.indexOf("----"));
-                int startInput = Integer.parseInt(startInputS);
+        String startInputS = body.toString().substring(body.toString().indexOf("name=\"startInput\"") + 9).trim();
+        startInputS = startInputS.substring(startInputS.indexOf("Input\"") + 6, startInputS.indexOf("----"));
+        int startInput = Integer.parseInt(startInputS);
 
-                String endInputS = body.toString().substring(body.toString().indexOf("name=\"endInput\"") + 9).trim();
-                endInputS = endInputS.substring(endInputS.indexOf("Input\"") + 6, endInputS.indexOf("----"));
-                int endInput = Integer.parseInt(endInputS);
+        String endInputS = body.toString().substring(body.toString().indexOf("name=\"endInput\"") + 9).trim();
+        endInputS = endInputS.substring(endInputS.indexOf("Input\"") + 6, endInputS.indexOf("----"));
+        int endInput = Integer.parseInt(endInputS);
 
-                String cashiersInputS = body.toString().substring(body.toString().indexOf("name=\"cashiersInput\"")+9).trim();
-                cashiersInputS = cashiersInputS.substring(cashiersInputS.indexOf("Input\"") + 6, cashiersInputS.indexOf("----"));
-                int cashiersInput = Integer.parseInt(cashiersInputS);
+        String cashiersInputS = body.toString().substring(body.toString().indexOf("name=\"cashiersInput\"") + 9).trim();
+        cashiersInputS = cashiersInputS.substring(cashiersInputS.indexOf("Input\"") + 6,
+                cashiersInputS.indexOf("----"));
+        int cashiersInput = Integer.parseInt(cashiersInputS);
 
-                String orderTakersS = body.toString().substring(body.toString().indexOf("name=\"orderTakersInput\"") + 9).trim();
-                orderTakersS = orderTakersS.substring(orderTakersS.indexOf("Input\"") + 6, orderTakersS.indexOf("----"));
-                int orderTakersInput = Integer.parseInt(orderTakersS);
+        String orderTakersS = body.toString().substring(body.toString().indexOf("name=\"orderTakersInput\"") + 9)
+                .trim();
+        orderTakersS = orderTakersS.substring(orderTakersS.indexOf("Input\"") + 6, orderTakersS.indexOf("----"));
+        int orderTakersInput = Integer.parseInt(orderTakersS);
 
-                dataRetrival data = new dataRetrival(schedule, lineInput, startInput, endInput, cashiersInput, orderTakersInput);
-                return data;
+        dataRetrival data = new dataRetrival(schedule, lineInput, startInput, endInput, cashiersInput,
+                orderTakersInput);
+        return data;
     }
 
     public static void main(String[] args) {
@@ -95,48 +105,40 @@ public class App {
                 dataRetrival data = retrive(body);
 
                 String schedule = data.schedule();
-                int lineInput = data.lineInput();
-                int startInput = data.startInput();
-                int endInput = data.endInput();
-                int cashiersInput = data.cashiersInput();
-                int orderTakersInput = data.orderTakersInput();
 
-                Employee[] employees = normalizeData.creatEmployees(schedule);
-                if(startInput < 9) {
-                    startInput += 12;
-                }
-                if (endInput < 10) {
-                    endInput +=12;
+                 int lineInput = data.lineInput();
+                 int startInput = data.startInput();
+                 int endInput = data.endInput();
+                 int cashiersInput = data.cashiersInput();
+                 int orderTakersInput = data.orderTakersInput();
+
+                try {
+
+                    String schedule2 = "";
+                    schedule2 = normalizeData.processString(schedule);
+                    Employee[] employees = normalizeData.createEmployees2(schedule2);
+                   
+                    scheduleCreator.createRotations(employees, startInput, endInput, orderTakersInput, cashiersInput, orderTakersInput);
+
+
+
+
+                    return("printed");
+
+                 
+
+                } catch (Exception e) {
+                    
+                    e.printStackTrace();
+                    return "Error processing employees";
                 }
 
-                scheduleCreator.createRotations(employees, startInput, endInput, lineInput, cashiersInput, orderTakersInput);
-                
-              
-                
-                return schedule +  "penguin";
             } catch (IOException e) {
-                // Handle the exception
+               
                 e.printStackTrace();
                 return "Error reading the request body";
             }
 
-            // String currentSchedule = n.substring(0,n.indexOf("~"));
-            // n = shorten(n);
-            // int lineInput = Integer.parseInt(steal(n));
-            // n = shorten(n);
-            // int startInput = Integer.parseInt(steal(n));
-            // n = shorten(n);
-            // int endInput = Integer.parseInt(steal(n));
-            // n = shorten(n);
-            // int cashiersInput = Integer.parseInt(steal(n));
-            // n = shorten(n);
-            // int orderTakersInput = Integer.parseInt(steal(n));
-            // n = shorten(n);
-            // Employee[] employees = normalizeData.creatEmployees(currentSchedule);
-            // String total = "";
-            // for (int x = 0; x < employees.length; x++) {
-            // total += employees[x].getName();
-            // }
         });
     }
 }
