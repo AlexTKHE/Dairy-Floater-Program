@@ -106,35 +106,36 @@ public class App {
 
                 String schedule = data.schedule();
 
-                 int lineInput = data.lineInput();
-                 int startInput = data.startInput();
-                 int endInput = data.endInput();
-                 int cashiersInput = data.cashiersInput();
-                 int orderTakersInput = data.orderTakersInput();
+                int lineInput = data.lineInput();
+                int startInput = data.startInput();
+                int endInput = data.endInput();
+                int cashiersInput = data.cashiersInput();
+                int orderTakersInput = data.orderTakersInput();
 
                 try {
 
                     String schedule2 = "";
                     schedule2 = normalizeData.processString(schedule);
-                    Employee[] employees = normalizeData.createEmployees2(schedule2);
-                   
-                    scheduleCreator.createRotations(employees, startInput, endInput, orderTakersInput, cashiersInput, orderTakersInput);
+                    String[] employeesString = normalizeData.createArray(schedule2);
+                    Employee[] employees = normalizeData.createEmployees(employeesString);
 
+                    //  scheduleCreator.createRotations(employees, startInput, endInput,
+                    //  lineInput, cashiersInput, orderTakersInput);
+                    String total = "";
+                    for (int x = 0; x < employees.length; x++) {
+                        total += employees[x].getName() + " " + employees[x].getPositionName() + " " + employees[x].getShiftStart() + "-" + employees[x].getShiftEnd();
+                    }
 
-
-
-                    return("printed");
-
-                 
+                    return (total);
 
                 } catch (Exception e) {
-                    
+
                     e.printStackTrace();
                     return "Error processing employees";
                 }
 
             } catch (IOException e) {
-               
+
                 e.printStackTrace();
                 return "Error reading the request body";
             }

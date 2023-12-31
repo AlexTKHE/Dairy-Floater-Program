@@ -28,10 +28,9 @@ public class ScanIn {
         String[] employeeArray = new String[amountEmployees(schedule)];
         String remainSchedule = schedule;
         int x = 0;
-        while (remainSchedule.length() > 0) {
-            employeeArray[x] = remainSchedule.substring(0, remainSchedule.indexOf(".")) + ".";
-            remainSchedule = remainSchedule.substring(remainSchedule.indexOf(".") + 1);
-
+        while(remainSchedule.contains(".")) {
+            employeeArray[x] = remainSchedule.substring(0, remainSchedule.indexOf(".") + 1);
+            remainSchedule = remainSchedule.substring(remainSchedule.indexOf(".")+1);
             x++;
         }
         return employeeArray;
@@ -50,6 +49,32 @@ public class ScanIn {
         }
     
         return schedule;
+    }
+
+    public Employee[] createEmployees(String[] employeeStrings) {
+        Employee[] employees = new Employee[employeeStrings.length - 1];
+        for (int x = 0; x < employees.length; x++) {
+        String name = employeeStrings[x].substring(0, employeeStrings[x].indexOf(","));
+
+        employeeStrings[x] = employeeStrings[x].substring(employeeStrings[x].indexOf(",")+1);
+
+        String position = employeeStrings[x].substring(0, employeeStrings[x].indexOf(","));
+
+        employeeStrings[x] = employeeStrings[x].substring(employeeStrings[x].indexOf(",")+1);
+
+        int shiftStart = Integer.parseInt(employeeStrings[x].substring(0, employeeStrings[x].indexOf("-")));
+    
+         if ( shiftStart < 8) {
+             shiftStart += 12;
+        }
+        int shiftEnd = Integer.parseInt(employeeStrings[x].substring(employeeStrings[x].indexOf("-") + 1, employeeStrings[x].indexOf(".")));
+        if(shiftEnd < 10) {
+            shiftEnd += 12;
+        }
+        
+        employees[x] = new Employee(name, position, shiftStart, shiftEnd);
+    }
+        return employees;
     }
 
     public Employee[] createEmployees2(String schedule) {
@@ -78,5 +103,7 @@ public class ScanIn {
     }
         return  employees;
     } 
+
+
     
 }

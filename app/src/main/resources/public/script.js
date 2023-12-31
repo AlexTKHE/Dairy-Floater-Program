@@ -108,10 +108,12 @@ function createSchedule() {
             if (c - Math.trunc(c / 3) * 3 == 0) {
                 spacedArray1[spacedArray1.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
+                spacedArray1[spacedArray1.length-1] = spacedArray1[spacedArray1.length-1].replace(/<br\s*\/?>/g, "");
 
             } else if (c - Math.trunc(c / 3) * 3 == 1) {
                 spacedArray3[spacedArray3.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
+                spacedArray1[spacedArray2.length-1] = spacedArray1[spacedArray2.length-1].replace(/<br\s*\/?>/g, "");
 
             } else {
                 spacedArray1[spacedArray1.length - 1] += ".";

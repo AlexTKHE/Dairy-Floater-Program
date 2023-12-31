@@ -90,8 +90,8 @@ public class Randomize {
             }
 
             // END
-
-            daysShift30[i] = new Employee(name, instancePosition, start, shiftLength);
+            int shiftEnd = shiftLength + start;
+            daysShift30[i] = new Employee(name, instancePosition, start, shiftEnd);
         }
         return daysShift30;
     }

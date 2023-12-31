@@ -1,6 +1,6 @@
 The schedule for the day in the format of (Name, Position, shift start val - shift end val):
 Olivie, Order Filler, 2-6.
- Rosamund, Rotation Floater, 6-9.
+Rosamund, Rotation Floater, 6-9.
  Elenore, Order Filler, 6-9.
  Norry, Rotation Floater, 8-2.
  Dulce, Rotation Floater, 12-4.
