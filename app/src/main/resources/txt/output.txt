@@ -1,26 +1,39 @@
 The schedule for the day in the format of (Name, Position, shift start val - shift end val):
-Olivie, Order Filler, 2-6.
-Rosamund, Rotation Floater, 6-9.
- Elenore, Order Filler, 6-9.
- Norry, Rotation Floater, 8-2.
- Dulce, Rotation Floater, 12-4.
- Anatola, Rotation Floater, 12-4.
- Clarie, Rotation Floater, 2-9.
- Karlotte, Rotation Floater, 6-9.
-Lanny, Rotation Floater, 2-6.
- Felisha, Rotation Floater, 2-6.
- Harriet, Rotation Floater, 2-9.
- Nady, Rotation Floater, 8-2.
- Regine, Rotation Floater, 12-4.
- Melicent, Rotation Floater, 6-9.
- Julie, Order Filler, 6-9.
- Barry, Rotation Floater, 2-9.
- Hana, Rotation Floater, 6-9.
- Beryl, Rotation Floater, 6-9.
- Rhody, Rotation Floater, 11-4.
- Ursula, Rotation Floater, 12-4.
- Yolande, Station Manager, 2-6.
- Jennee, Rotation Floater, 2-9.
+Jesse, Rotation Floater, 2-9.
+ Auroora, Rotation Floater, 6-9.
+ Darcy, Rotation Floater, 2-6.
+ Kolben, Order Filler, 8-2.
+ Alidia, Rotation Floater, 12-4.
+ Nada, Order Filler, 12-4.
+ Prudi, Rotation Floater, 6-9.
+ Georgeanne, Rotation Floater, 6-9.
+ Morgen, Station Manager, 2-6.
+ Gwynne, Rotation Floater, 2-6.
+ Pierette, Rotation Floater, 6-9.
+ Madalena, Station Manager, 6-9.
+Kyle, Rotation Floater, 6-9.
+ Leela, Rotation Floater, 6-9.
+ Dyane, Rotation Floater, 2-9.
+ Chiarra, Rotation Floater, 8-2.
+ Kylila, Rotation Floater, 12-4.
+ Waneta, Rotation Floater, 6-9.
+ Freda, Rotation Floater, 6-9.
+ Deborah, Rotation Floater, 2-6.
+ Camilla, Rotation Floater, 2-6.
+ Trista, Rotation Floater, 6-9.
+ Hyacinthe, Rotation Floater, 6-9.
+ Trixy, Rotation Floater, 2-9.
+Leigh, Order Filler, 6-9.
+ Indira, Rotation Floater, 2-9.
+ Aleen, Rotation Floater, 2-6.
+ Albertine, Order Filler, 11-4.
+ Anna, Manager, 12-4.
+ Hedy, Manager, 6-9.
+ Anita, Rotation Floater, 6-9.
+ Kimberly, Order Filler, 6-9.
+ Della, Rotation Floater, 6-9.
+ Angil, Rotation Floater, 2-6.
+ Silva, Station Manager, 6-9.
 
 
 
@@ -31,55 +44,55 @@ Rotation Schedule for the day will be:
 Walk-ups: 
  
 
-2:00-2:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-2:30-3:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-3:00-3:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-3:30-4:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-4:00-4:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-4:30-5:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-5:00-5:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-5:30-6:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-6:00-6:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-6:30-7:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-7:00-7:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-7:30-8:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-8:00-8:30 AM:        Cashier   1:           Norry   Order Taker   1: did not initilize -- OT   
-8:30-9:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
+2:00-2:30 PM:         Cashier   1:           Angil   Order Taker   1:          Kylila   
+2:30-3:00 PM:         Cashier   1:           Dyane   Order Taker   1:          Indira   
+3:00-3:30 PM:         Cashier   1:           Darcy   Order Taker   1:          Kylila   
+3:30-4:00 PM:         Cashier   1:           Angil   Order Taker   1:         Camilla   
+4:00-4:30 PM:         Cashier   1:           Trixy   Order Taker   1:          Gwynne   
+4:30-5:00 PM:         Cashier   1:           Aleen   Order Taker   1:           Darcy   
+5:00-5:30 PM:         Cashier   1:          Indira   Order Taker   1:           Aleen   
+5:30-6:00 PM:         Cashier   1:           Aleen   Order Taker   1:         Deborah   
+6:00-6:30 PM:         Cashier   1:          Trista   Order Taker   1:          Waneta   
+6:30-7:00 PM:         Cashier   1:           Dyane   Order Taker   1:          Waneta   
+7:00-7:30 PM:         Cashier   1:          Indira   Order Taker   1:         Auroora   
+7:30-8:00 PM:         Cashier   1:           Leela   Order Taker   1:            Kyle   
+8:00-8:30 PM:         Cashier   1:        Pierette   Order Taker   1:         Auroora   
+8:30-9:00 PM:         Cashier   1:           Anita   Order Taker   1:          Trista   
  
  
 Driveway: 
  
 
-2:00-2:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-2:30-3:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-3:00-3:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-3:30-4:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-4:00-4:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-4:30-5:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-5:00-5:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-5:30-6:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-6:00-6:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-6:30-7:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-7:00-7:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-7:30-8:00 AM:        Cashier   1: did not initilize -- C   Order Taker   1: did not initilize -- OT   
-8:00-8:30 AM:        Cashier   1: did not initilize -- C   Order Taker   1:            Nady   
-8:30-9:00 AM:        Cashier   1:           Norry   Order Taker   1:            Nady   
+2:00-2:30 PM:         Cashier   1:          Alidia   Order Taker   1:          Indira   
+2:30-3:00 PM:         Cashier   1:          Gwynne   Order Taker   1:         Deborah   
+3:00-3:30 PM:         Cashier   1:          Alidia   Order Taker   1:          Gwynne   
+3:30-4:00 PM:         Cashier   1:         Deborah   Order Taker   1:           Trixy   
+4:00-4:30 PM:         Cashier   1:         Camilla   Order Taker   1:         Deborah   
+4:30-5:00 PM:         Cashier   1:           Dyane   Order Taker   1:         Camilla   
+5:00-5:30 PM:         Cashier   1:           Dyane   Order Taker   1:         Deborah   
+5:30-6:00 PM:         Cashier   1:           Darcy   Order Taker   1:          Indira   
+6:00-6:30 PM:         Cashier   1:            Kyle   Order Taker   1:           Prudi   
+6:30-7:00 PM:         Cashier   1:          Trista   Order Taker   1:           Prudi   
+7:00-7:30 PM:         Cashier   1:       Hyacinthe   Order Taker   1:           Della   
+7:30-8:00 PM:         Cashier   1:          Indira   Order Taker   1:           Dyane   
+8:00-8:30 PM:         Cashier   1:           Freda   Order Taker   1:           Leela   
+8:30-9:00 PM:         Cashier   1:           Della   Order Taker   1:       Hyacinthe   
  
  
 Curb: 
  
 
-2:00-2:30 AM:        Order Taker   1: did not initilize -- OT   
-2:30-3:00 AM:        Order Taker   1: did not initilize -- OT   
-3:00-3:30 AM:        Order Taker   1: did not initilize -- OT   
-3:30-4:00 AM:        Order Taker   1: did not initilize -- OT   
-4:00-4:30 AM:        Order Taker   1: did not initilize -- OT   
-4:30-5:00 AM:        Order Taker   1: did not initilize -- OT   
-5:00-5:30 AM:        Order Taker   1: did not initilize -- OT   
-5:30-6:00 AM:        Order Taker   1: did not initilize -- OT   
-6:00-6:30 AM:        Order Taker   1: did not initilize -- OT   
-6:30-7:00 AM:        Order Taker   1: did not initilize -- OT   
-7:00-7:30 AM:        Order Taker   1: did not initilize -- OT   
-7:30-8:00 AM:        Order Taker   1: did not initilize -- OT   
-8:00-8:30 AM:        Order Taker   1: did not initilize -- OT   
-8:30-9:00 AM:        Order Taker   1: did not initilize -- OT   
+2:00-2:30 PM:         Order Taker   1:         Camilla   
+2:30-3:00 PM:         Order Taker   1:          Alidia   
+3:00-3:30 PM:         Order Taker   1:         Deborah   
+3:30-4:00 PM:         Order Taker   1:           Jesse   
+4:00-4:30 PM:         Order Taker   1:          Indira   
+4:30-5:00 PM:         Order Taker   1:          Indira   
+5:00-5:30 PM:         Order Taker   1:           Darcy   
+5:30-6:00 PM:         Order Taker   1:           Jesse   
+6:00-6:30 PM:         Order Taker   1:           Trixy   
+6:30-7:00 PM:         Order Taker   1:           Anita   
+7:00-7:30 PM:         Order Taker   1:           Anita   
+7:30-8:00 PM:         Order Taker   1:       Hyacinthe   
+8:00-8:30 PM:         Order Taker   1:          Waneta   
+8:30-9:00 PM:         Order Taker   1:          Waneta   

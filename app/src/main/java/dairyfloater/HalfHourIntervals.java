@@ -25,7 +25,7 @@ public class HalfHourIntervals {
         }
         return total;
     }
-    public void createRotations(Employee[] daysShift30, int startInput, int endInput, int linesInput, int cashiersInput, int orderTakersInput) throws FileNotFoundException, UnsupportedEncodingException {
+    public String createRotations(Employee[] daysShift30, int startInput, int endInput, int linesInput, int cashiersInput, int orderTakersInput) throws FileNotFoundException, UnsupportedEncodingException {
 
         // Vars
         Schedule may30 = new Schedule(startInput, endInput, linesInput);
@@ -83,6 +83,7 @@ public class HalfHourIntervals {
 
         Write myWriter = new Write("Walk-ups", "Driveway", "Curb", "Floaters");
         myWriter.writeSchedule(daysShift30, positions, may30);
+        return positions[6].getCashier();
 
     }
 }

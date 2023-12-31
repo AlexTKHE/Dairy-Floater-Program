@@ -8,7 +8,7 @@ record PositionsRecord(int[] countC, int[] countO) {
 };
 
 public class Write {
-
+    String outFile = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/output.txt";
     private String name1 = "";
     private String name2 = "";
     private String name3 = "";
@@ -210,7 +210,8 @@ public class Write {
     }
 
     public void write(String n) throws FileNotFoundException, UnsupportedEncodingException {
-        PrintWriter writer = new PrintWriter("test.txt", "UTF-8");
+        
+        PrintWriter writer = new PrintWriter(outFile, "UTF-8");
         writer.print(n);
         writer.close();
     }
@@ -223,7 +224,7 @@ public class Write {
         int[] countC = new int[positions.length];
         int[] countO = new int[positions.length];
 
-        PrintWriter writer = new PrintWriter("src/main/resources/txt/output.txt", "UTF-8");
+        PrintWriter writer = new PrintWriter(outFile, "UTF-8");
 
         createShifts(writer, daysShift30);
 

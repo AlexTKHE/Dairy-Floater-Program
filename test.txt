@@ -1,1 +1,97 @@
-alex
+The schedule for the day in the format of (Name, Position, shift start val - shift end val):
+Ciel, Order Filler, 6-9.
+Jilli, Order Filler, 6-9.
+Aurlie, Rotation Floater, 2-9.
+Cyndia, Order Filler, 6-9.
+Bibby, Order Filler, 6-9.
+Monique, Station Manager, 6-9.
+Christa, Order Filler, 6-9.
+Tasha, Manager, 2-9.
+Adina, Rotation Floater, 6-9.
+Annabelle, Station Manager, 8-2.
+Ellynn, Rotation Floater, 8-2.
+Livy, Rotation Floater, 11-4.
+Karlen, Station Manager, 12-4.
+Karoly, Rotation Floater, 12-4.
+Dorolisa, Rotation Floater, 12-4.
+Paula, Rotation Floater, 12-4.
+Nananne, Rotation Floater, 6-9.
+Halley, Station Manager, 6-9.
+Ceciley, Rotation Floater, 2-9.
+Barby, Rotation Floater, 6-9.
+Erda, Order Filler, 2-9.
+Sharona, Rotation Floater, 6-9.
+Kellyann, Rotation Floater, 2-9.
+Sonnie, Rotation Floater, 2-6.
+Bobbye, Rotation Floater, 2-9.
+Jill, Manager, 2-9.
+Leora, Rotation Floater, 6-9.
+Scarlett, Rotation Floater, 6-9.
+Edie, Rotation Floater, 6-9.
+Hortense, Station Manager, 2-6.
+Crista, Rotation Floater, 2-6.
+Caryn, Rotation Floater, 6-9.
+Cammy, Rotation Floater, 6-9.
+Rosene, Rotation Floater, 2-6.
+
+
+
+
+Rotation Schedule for the day will be: 
+ 
+ 
+Walk-ups: 
+ 
+
+2:00-2:30 PM:         Cashier   1:          Aurlie   Order Taker   1:            Livy   
+2:30-3:00 PM:         Cashier   1:          Bobbye   Order Taker   1:        Dorolisa   
+3:00-3:30 PM:         Cashier   1:          Crista   Order Taker   1:          Aurlie   
+3:30-4:00 PM:         Cashier   1:          Rosene   Order Taker   1:          Karoly   
+4:00-4:30 PM:         Cashier   1:          Crista   Order Taker   1:         Ceciley   
+4:30-5:00 PM:         Cashier   1:         Ceciley   Order Taker   1:          Aurlie   
+5:00-5:30 PM:         Cashier   1:          Bobbye   Order Taker   1:          Sonnie   
+5:30-6:00 PM:         Cashier   1:          Crista   Order Taker   1:          Aurlie   
+6:00-6:30 PM:         Cashier   1:           Cammy   Order Taker   1:           Adina   
+6:30-7:00 PM:         Cashier   1:            Edie   Order Taker   1:         Sharona   
+7:00-7:30 PM:         Cashier   1:           Cammy   Order Taker   1:         Nananne   
+7:30-8:00 PM:         Cashier   1:            Edie   Order Taker   1:           Leora   
+8:00-8:30 PM:         Cashier   1:          Aurlie   Order Taker   1:           Cammy   
+8:30-9:00 PM:         Cashier   1:           Adina   Order Taker   1:         Nananne   
+ 
+ 
+Driveway: 
+ 
+
+2:00-2:30 PM:         Cashier   1:        Dorolisa   Order Taker   1:          Sonnie   
+2:30-3:00 PM:         Cashier   1:           Paula   Order Taker   1:         Ceciley   
+3:00-3:30 PM:         Cashier   1:          Bobbye   Order Taker   1:         Ceciley   
+3:30-4:00 PM:         Cashier   1:          Sonnie   Order Taker   1:          Aurlie   
+4:00-4:30 PM:         Cashier   1:          Rosene   Order Taker   1:          Bobbye   
+4:30-5:00 PM:         Cashier   1:          Bobbye   Order Taker   1:          Rosene   
+5:00-5:30 PM:         Cashier   1:         Ceciley   Order Taker   1:          Aurlie   
+5:30-6:00 PM:         Cashier   1:        Kellyann   Order Taker   1:          Sonnie   
+6:00-6:30 PM:         Cashier   1:         Sharona   Order Taker   1:          Aurlie   
+6:30-7:00 PM:         Cashier   1:        Scarlett   Order Taker   1:           Caryn   
+7:00-7:30 PM:         Cashier   1:        Kellyann   Order Taker   1:          Aurlie   
+7:30-8:00 PM:         Cashier   1:          Bobbye   Order Taker   1:           Cammy   
+8:00-8:30 PM:         Cashier   1:          Bobbye   Order Taker   1:           Adina   
+8:30-9:00 PM:         Cashier   1:          Aurlie   Order Taker   1:            Edie   
+ 
+ 
+Curb: 
+ 
+
+2:00-2:30 PM:         Order Taker   1:           Paula   
+2:30-3:00 PM:         Order Taker   1:          Aurlie   
+3:00-3:30 PM:         Order Taker   1:        Dorolisa   
+3:30-4:00 PM:         Order Taker   1:        Dorolisa   
+4:00-4:30 PM:         Order Taker   1:          Sonnie   
+4:30-5:00 PM:         Order Taker   1:          Sonnie   
+5:00-5:30 PM:         Order Taker   1:        Kellyann   
+5:30-6:00 PM:         Order Taker   1:         Ceciley   
+6:00-6:30 PM:         Order Taker   1:        Scarlett   
+6:30-7:00 PM:         Order Taker   1:           Cammy   
+7:00-7:30 PM:         Order Taker   1:           Adina   
+7:30-8:00 PM:         Order Taker   1:        Kellyann   
+8:00-8:30 PM:         Order Taker   1:           Leora   
+8:30-9:00 PM:         Order Taker   1:        Kellyann   

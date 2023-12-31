@@ -7,11 +7,13 @@ import static spark.Spark.*;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 import com.google.common.base.Utf8;
@@ -65,10 +67,17 @@ public class App {
         return data;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         HalfHourIntervals scheduleCreator = new HalfHourIntervals();
         ScanIn normalizeData = new ScanIn();
+
+        // Randomize random = new Randomize();
+        
+        // Employee[] employees = random.createEmployees(34);
+        
+       // String s =scheduleCreator.createRotations(employees, 14, 21 ,3,2,3);
+        //System.out.println("WORK" + " " + s);
 
         staticFiles.location("/public");
         port(8080);
@@ -106,9 +115,15 @@ public class App {
 
                 String schedule = data.schedule();
 
-                int lineInput = data.lineInput();
+                int linesInput = data.lineInput();
                 int startInput = data.startInput();
+                if (startInput < 9) {
+                    startInput += 12;
+                }
                 int endInput = data.endInput();
+                if (endInput < 10) {
+                    endInput += 12;
+                }
                 int cashiersInput = data.cashiersInput();
                 int orderTakersInput = data.orderTakersInput();
 
@@ -119,14 +134,14 @@ public class App {
                     String[] employeesString = normalizeData.createArray(schedule2);
                     Employee[] employees = normalizeData.createEmployees(employeesString);
 
-                    //  scheduleCreator.createRotations(employees, startInput, endInput,
-                    //  lineInput, cashiersInput, orderTakersInput);
+                      scheduleCreator.createRotations(employees, startInput, endInput,
+                      linesInput, cashiersInput, orderTakersInput);
                     String total = "";
                     for (int x = 0; x < employees.length; x++) {
                         total += employees[x].getName() + " " + employees[x].getPositionName() + " " + employees[x].getShiftStart() + "-" + employees[x].getShiftEnd();
                     }
 
-                    return (total);
+                    return ("DATA: " + "Start of Time: " + startInput + "End of Time: " + endInput + "Num of Lines: " + linesInput + "Cashiers: " + cashiersInput + "ORder Takers: " + orderTakersInput);
 
                 } catch (Exception e) {
 
