@@ -136,12 +136,17 @@ public class App {
 
                       scheduleCreator.createRotations(employees, startInput, endInput,
                       linesInput, cashiersInput, orderTakersInput);
-                    String total = "";
-                    for (int x = 0; x < employees.length; x++) {
-                        total += employees[x].getName() + " " + employees[x].getPositionName() + " " + employees[x].getShiftStart() + "-" + employees[x].getShiftEnd();
+                    String rotations = "";
+                    
+
+                    String[] roatationsArr = normalizeData.readInRotations(linesInput);
+                    
+
+                    for (int x = 0; x < roatationsArr.length; x++) {
+                        rotations += roatationsArr[x];
                     }
 
-                    return ("DATA: " + "Start of Time: " + startInput + "End of Time: " + endInput + "Num of Lines: " + linesInput + "Cashiers: " + cashiersInput + "ORder Takers: " + orderTakersInput);
+                    return (rotations);
 
                 } catch (Exception e) {
 

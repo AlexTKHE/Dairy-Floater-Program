@@ -1,39 +1,28 @@
 The schedule for the day in the format of (Name, Position, shift start val - shift end val):
-Jesse, Rotation Floater, 2-9.
- Auroora, Rotation Floater, 6-9.
- Darcy, Rotation Floater, 2-6.
- Kolben, Order Filler, 8-2.
- Alidia, Rotation Floater, 12-4.
- Nada, Order Filler, 12-4.
- Prudi, Rotation Floater, 6-9.
- Georgeanne, Rotation Floater, 6-9.
- Morgen, Station Manager, 2-6.
- Gwynne, Rotation Floater, 2-6.
- Pierette, Rotation Floater, 6-9.
- Madalena, Station Manager, 6-9.
-Kyle, Rotation Floater, 6-9.
- Leela, Rotation Floater, 6-9.
- Dyane, Rotation Floater, 2-9.
- Chiarra, Rotation Floater, 8-2.
- Kylila, Rotation Floater, 12-4.
- Waneta, Rotation Floater, 6-9.
- Freda, Rotation Floater, 6-9.
- Deborah, Rotation Floater, 2-6.
- Camilla, Rotation Floater, 2-6.
- Trista, Rotation Floater, 6-9.
- Hyacinthe, Rotation Floater, 6-9.
- Trixy, Rotation Floater, 2-9.
-Leigh, Order Filler, 6-9.
- Indira, Rotation Floater, 2-9.
- Aleen, Rotation Floater, 2-6.
- Albertine, Order Filler, 11-4.
- Anna, Manager, 12-4.
- Hedy, Manager, 6-9.
- Anita, Rotation Floater, 6-9.
- Kimberly, Order Filler, 6-9.
- Della, Rotation Floater, 6-9.
- Angil, Rotation Floater, 2-6.
- Silva, Station Manager, 6-9.
+Giselle, Order Filler, 2-9.
+ Lucita, Rotation Floater, 2-9.
+ Odele, Station Manager, 2-9.
+ Winna, Manager, 8-2.
+ Joelie, Rotation Floater, 12-4.
+ Risa, Rotation Floater, 12-4.
+ Annice, Rotation Floater, 2-9.
+ Francyne, Rotation Floater, 2-9.
+ Olia, Rotation Floater, 2-9.
+Tess, Order Filler, 6-9.
+ Nicolle, Rotation Floater, 6-9.
+ Steffi, Rotation Floater, 6-9.
+ Juditha, Rotation Floater, 8-2.
+ Abagail, Rotation Floater, 12-4.
+ Nikoletta, Manager, 2-6.
+ Candis, Rotation Floater, 6-9.
+ Channa, Rotation Floater, 2-9.
+ Carlin, Rotation Floater, 2-6.
+ Maddalena, Manager, 2-9.
+ Colly, Rotation Floater, 2-6.
+ Charlean, Order Filler, 11-4.
+ Courtenay, Station Manager, 12-4.
+ Pandora, Station Manager, 2-9.
+ Gwen, Rotation Floater, 2-9.
 
 
 
@@ -44,55 +33,43 @@ Rotation Schedule for the day will be:
 Walk-ups: 
  
 
-2:00-2:30 PM:         Cashier   1:           Angil   Order Taker   1:          Kylila   
-2:30-3:00 PM:         Cashier   1:           Dyane   Order Taker   1:          Indira   
-3:00-3:30 PM:         Cashier   1:           Darcy   Order Taker   1:          Kylila   
-3:30-4:00 PM:         Cashier   1:           Angil   Order Taker   1:         Camilla   
-4:00-4:30 PM:         Cashier   1:           Trixy   Order Taker   1:          Gwynne   
-4:30-5:00 PM:         Cashier   1:           Aleen   Order Taker   1:           Darcy   
-5:00-5:30 PM:         Cashier   1:          Indira   Order Taker   1:           Aleen   
-5:30-6:00 PM:         Cashier   1:           Aleen   Order Taker   1:         Deborah   
-6:00-6:30 PM:         Cashier   1:          Trista   Order Taker   1:          Waneta   
-6:30-7:00 PM:         Cashier   1:           Dyane   Order Taker   1:          Waneta   
-7:00-7:30 PM:         Cashier   1:          Indira   Order Taker   1:         Auroora   
-7:30-8:00 PM:         Cashier   1:           Leela   Order Taker   1:            Kyle   
-8:00-8:30 PM:         Cashier   1:        Pierette   Order Taker   1:         Auroora   
-8:30-9:00 PM:         Cashier   1:           Anita   Order Taker   1:          Trista   
+4:00-4:30 PM:         Order Taker   1:            Olia   
+4:30-5:00 PM:         Order Taker   1:          Annice   
+5:00-5:30 PM:         Order Taker   1:          Annice   
+5:30-6:00 PM:         Order Taker   1:          Lucita   
+6:00-6:30 PM:         Order Taker   1:          Candis   
+6:30-7:00 PM:         Order Taker   1:        Francyne   
+7:00-7:30 PM:         Order Taker   1:          Candis   
+7:30-8:00 PM:         Order Taker   1:          Annice   
+8:00-8:30 PM:         Order Taker   1:          Annice   
+8:30-9:00 PM:         Order Taker   1:            Gwen   
  
  
 Driveway: 
  
 
-2:00-2:30 PM:         Cashier   1:          Alidia   Order Taker   1:          Indira   
-2:30-3:00 PM:         Cashier   1:          Gwynne   Order Taker   1:         Deborah   
-3:00-3:30 PM:         Cashier   1:          Alidia   Order Taker   1:          Gwynne   
-3:30-4:00 PM:         Cashier   1:         Deborah   Order Taker   1:           Trixy   
-4:00-4:30 PM:         Cashier   1:         Camilla   Order Taker   1:         Deborah   
-4:30-5:00 PM:         Cashier   1:           Dyane   Order Taker   1:         Camilla   
-5:00-5:30 PM:         Cashier   1:           Dyane   Order Taker   1:         Deborah   
-5:30-6:00 PM:         Cashier   1:           Darcy   Order Taker   1:          Indira   
-6:00-6:30 PM:         Cashier   1:            Kyle   Order Taker   1:           Prudi   
-6:30-7:00 PM:         Cashier   1:          Trista   Order Taker   1:           Prudi   
-7:00-7:30 PM:         Cashier   1:       Hyacinthe   Order Taker   1:           Della   
-7:30-8:00 PM:         Cashier   1:          Indira   Order Taker   1:           Dyane   
-8:00-8:30 PM:         Cashier   1:           Freda   Order Taker   1:           Leela   
-8:30-9:00 PM:         Cashier   1:           Della   Order Taker   1:       Hyacinthe   
+4:00-4:30 PM:         Order Taker   1:          Lucita   
+4:30-5:00 PM:         Order Taker   1:            Olia   
+5:00-5:30 PM:         Order Taker   1:            Olia   
+5:30-6:00 PM:         Order Taker   1:           Colly   
+6:00-6:30 PM:         Order Taker   1:         Nicolle   
+6:30-7:00 PM:         Order Taker   1:            Olia   
+7:00-7:30 PM:         Order Taker   1:            Gwen   
+7:30-8:00 PM:         Order Taker   1:          Channa   
+8:00-8:30 PM:         Order Taker   1:            Olia   
+8:30-9:00 PM:         Order Taker   1:          Annice   
  
  
-Curb: 
+Floaters: 
  
 
-2:00-2:30 PM:         Order Taker   1:         Camilla   
-2:30-3:00 PM:         Order Taker   1:          Alidia   
-3:00-3:30 PM:         Order Taker   1:         Deborah   
-3:30-4:00 PM:         Order Taker   1:           Jesse   
-4:00-4:30 PM:         Order Taker   1:          Indira   
-4:30-5:00 PM:         Order Taker   1:          Indira   
-5:00-5:30 PM:         Order Taker   1:           Darcy   
-5:30-6:00 PM:         Order Taker   1:           Jesse   
-6:00-6:30 PM:         Order Taker   1:           Trixy   
-6:30-7:00 PM:         Order Taker   1:           Anita   
-7:00-7:30 PM:         Order Taker   1:           Anita   
-7:30-8:00 PM:         Order Taker   1:       Hyacinthe   
-8:00-8:30 PM:         Order Taker   1:          Waneta   
-8:30-9:00 PM:         Order Taker   1:          Waneta   
+4:00-4:30 PM:         Cashier   1:        Francyne   
+4:30-5:00 PM:         Cashier   1:          Lucita   
+5:00-5:30 PM:         Cashier   1:        Francyne   
+5:30-6:00 PM:         Cashier   1:          Carlin   
+6:00-6:30 PM:         Cashier   1:        Francyne   
+6:30-7:00 PM:         Cashier   1:          Lucita   
+7:00-7:30 PM:         Cashier   1:            Olia   
+7:30-8:00 PM:         Cashier   1:        Francyne   
+8:00-8:30 PM:         Cashier   1:          Lucita   
+8:30-9:00 PM:         Cashier   1:          Candis   
