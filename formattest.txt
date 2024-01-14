@@ -1,0 +1,30 @@
+Full-Time	7am-2pm	7.0	Sheena Seymour		
+	Order Filler	8am-2pm	6.0	Brandon Niermeyer		
+	Order Filler	10am-3pm	5.0	Alden Hofstede		Kate D cover
+	Order Filler	11am-4pm	5.0	Maya Martinez		
+	Rotation Floater	11am-4pm	5.0	Serenity Chen		
+	Rotation Floater	11am-4pm	5.0	Jake Grijalva		
+	Order Filler	12pm-4pm	4.0	Jaxson Harris		
+	Order Filler	12pm-4pm	4.0	Ajay Reyes		
+	Rotation Floater	12pm-4pm	4.0	Milan Garuda		
+	Rotation Floater	12pm-6pm	6.0	Zoe Triantos		
+	Order Filler	1pm-5pm	4.0	Eliana Caro		
+	Rotation Floater	1pm-5pm	4.0	Waylon Hopkins		
+	Rotation Floater	1pm-5pm	4.0	Elijah Lammle		
+	Order Filler	2pm-6pm	4.0	Eliana Hockaday		
+	Order Filler	2pm-6pm	4.0	Colin Surridge		
+	Rotation Floater	2pm-6pm	4.0	Nicole Spiller		
+	Rotation Floater	2pm-6pm	4.0	Noah Ventura		
+	Manager	2pm-9pm	7.0	Emily Schuchardt		a
+	Rotation Floater	3pm-9pm	6.0	Mia Trejo		
+	Order Filler	4pm-9pm	5.0	Riley Rohr		
+	Rotation Floater	4pm-9pm	5.0	Olivia Marcoux		
+	Rotation Floater	4pm-9pm	5.0	Kylie Schuchardt		
+	Rotation Floater	4pm-9pm	5.0	Lainey Snowden		
+	Training Manager	5pm-9pm	4.0	Devlyn Kinnear		
+	Order Filler	6pm-9pm	3.0	Ashley Alcantar		
+	Order Filler	6pm-9pm	3.0	Alex Brooke		
+	Order Filler	6pm-9pm	3.0	Maylen Montoya		
+	Rotation Floater	6pm-9pm	3.0	Mason Basbas		
+	Rotation Floater	6pm-9pm	3.0	Melissa McMillin		
+	Rotation Floater	6pm-9pm	3.0	Em Morris

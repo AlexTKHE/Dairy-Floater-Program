@@ -4,7 +4,7 @@ body {
     position: absolute;
     background-color: #EBD9B0;
     color: #333;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Cascadia Code', monospace;
     margin: 0;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ body {
 
 .title-text {
     size: 15px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Cascadia Code', monospace;
     color: #EBD9B0;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 label[for="numInput"] {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Cascadia Code', monospace;
     font-size: 26px;
     font-weight: bold;
     color: #6C2B40;
@@ -176,44 +176,35 @@ label[for="numInput"] {
 
 .apiCalls {
     position: relative;
-    transform: translateX(-50%);
+    background-color: #EBD9B0;
     left: 100%;
+    transform: translateX(-50%);
     top: 300px;
-    width: 400%;
     display: flex;
-    margin-bottom: 20px;
+    flex-wrap: wrap; 
     justify-content: center;
     color: #6C2B40;
     z-index: 5;
-    /* Set a high z-index value */
+    overflow-x: auto;
 }
 
-#apiResponse1 {
-    white-space: nowrap;
-    color: #6C2B40;
-    font-size: 20px;
-    margin-bottom: 20px;
-    z-index: 100;
-}
-
-#apiResponse2 {
-    white-space: nowrap;
-    margin-right: 5%;
-    margin-left: 5%;
-    color: #6C2B40;
-    font-size: 20px;
-    margin-bottom: 20px;
-    z-index: 100;
-}
-
+#apiResponse1,
+#apiResponse2,
 #apiResponse3 {
-    white-space: nowrap;
+    flex: 1 1 100%;
+    max-width: calc(33.3333% - 20px); 
+    box-sizing: border-box; 
     color: #6C2B40;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-right: 5px;
-    z-index: 100;
+    margin-right: 10px; 
 }
+
+[contenteditable="true"] {
+    white-space: nowrap;
+    
+}
+
 
 #hiddenButton {
     right: 5%;
@@ -252,9 +243,8 @@ label[for="startInput"],
 label[for="endInput"],
 label[for="cashiersInput"],
 label[for="orderTakersInput"] {
-    font-family: 'Comic Sans MS', cursive;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 20px;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 15px;
     font-weight: bold;
     color: #6C2B40;
     margin-bottom: 8px;
@@ -269,10 +259,13 @@ label[for="orderTakersInput"] {
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
     width: 30%;
-    /* Set the width to 100% to fill the container */
-    font-size: 26px;
+    font-size: 15px;
     color: #EBD9B0;
     background-color: #6C2B40;
+    border-radius: 5%;
+    border: none; 
+    outline: none;
+    box-shadow: none;
 }
 
 #createRotationsButtonContainer {
@@ -298,16 +291,15 @@ label[for="orderTakersInput"] {
 }
 
 .rotations {
-        position: fixed;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-        z-index: 1000;
-        color: #6C2B40;
-        overflow-y: auto;
-        max-height: 50%;
-        
+    position: fixed;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    height: 62%; 
+    font-size: 20px;
+    z-index: 1000;
+    color: #6C2B40;
+    overflow-y: auto;
 }
 
 #rotations1 {

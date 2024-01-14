@@ -39,7 +39,7 @@ public class Employee {
         if (employeePosition.toLowerCase().equals("order filler")) {
             return 0;
         }
-        else if (employeePosition.toLowerCase().equals("rotation floater")) {
+        else if (employeePosition.toLowerCase().equals("rotation floater") || employeePosition.toLowerCase().equals("senior rotation")) {
             return 1;
         }
         else if (employeePosition.toLowerCase().equals("station manager")) {

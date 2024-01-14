@@ -1,9 +1,12 @@
 package dairyfloater;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
+
+import javax.swing.JTextArea;
 
 public class ScanIn {
 
@@ -111,82 +114,20 @@ public class ScanIn {
         return employees;
     }
 
-    public String[] readInRotations(int linesInput) {
-        boolean floaters = false;
+    public String readInRotations(int linesInput) throws IOException {
         String file = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/output.txt";
 
-        try {
+        try (FileReader reader = new FileReader(file)) {
+            JTextArea textArea = new JTextArea();
+            textArea.read(reader, file);
 
-            Scanner s = new Scanner(new File(file));
+            String rotations = textArea.getText();
 
-            boolean started = false;
-            String[] lineNames = new String[0];
-            String[] rotations = new String[0];
+            rotations = rotations.replaceAll("\t", "&#09;");
+            rotations = rotations.replaceAll("\n", "<br>");
+            rotations = rotations.replaceAll(" ", "&nbsp;");
 
-            while (s.hasNextLine()) {
-                String line = s.nextLine();
-                if (line.contains("Floaters:")) {
-                    floaters = true;
-                }
-            }
-
-            if (floaters) {
-                if (linesInput == 1) {
-                    lineNames = new String[] { "Walk-ups", "Floaters" };
-                } else if (linesInput == 2) {
-                    lineNames = new String[] { "Walk-ups", "Driveway", "Floaters" };
-                } else if (linesInput == 3) {
-                    lineNames = new String[] { "Walk-ups", "Driveway", "Curb", "Floaters" };
-                }
-                rotations = new String[(linesInput + 1)];
-
-            } else {
-                if (linesInput == 1) {
-                    lineNames = new String[] { "Walk-ups" };
-                } else if (linesInput == 2) {
-                    lineNames = new String[] { "Walk-ups", "Driveway" };
-                } else if (linesInput == 3) {
-                    lineNames = new String[] { "Walk-ups", "Driveway", "Curb" };
-                }
-                rotations = new String[linesInput];
-            }       
-
-            Scanner[] scanners = new Scanner[rotations.length];
-
-            for (int x = 0; x < rotations.length; x++) {
-                scanners[x] = new Scanner(new File(file));
-                while (scanners[x].hasNextLine()) {
-                    String line = scanners[x].nextLine();
-                    if (line.contains(lineNames[x])) {
-                        rotations[x] = lineNames[x] + "<br>";
-                        started = true;
-                        continue;
-
-                    }
-                    if (x < lineNames.length - 1) {
-                        if (line.contains(lineNames[x + 1])) {
-                            started = false;
-                            break;
-                        }
-                      
-                    }
-
-                    if (started) {
-                        rotations[x] += line + "<br>";
-                    }
-
-                }
-                scanners[x].close();
-            }
-
-            s.close();
             return rotations;
-        } catch (IOException ex) {
-            String[] error = { "Error", "Error", "Error", "Error" };
-
-            ex.printStackTrace();
-
-            return error;
         }
     }
 

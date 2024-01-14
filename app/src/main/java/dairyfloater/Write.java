@@ -226,13 +226,7 @@ public class Write {
 
         PrintWriter writer = new PrintWriter(outFile, "UTF-8");
 
-        createShifts(writer, daysShift30);
-
-        // Create some seperation
-
-        for (int x = 0; x < 4; x++) {
-            writer.println("");
-        }
+       
 
         // to write the people on cashier or ordertaker at any given time
 

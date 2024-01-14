@@ -227,6 +227,7 @@ function createRotations() {
             return response.text();
         })
         .then(result => {
+            result = "<pre>" + result + "<pre>";
             document.getElementById('rotations1').innerHTML = result;
         })
         .catch(error => {
