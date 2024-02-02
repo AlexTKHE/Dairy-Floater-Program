@@ -1,6 +1,7 @@
 package dairyfloater;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
@@ -57,6 +58,169 @@ public class ScanIn {
         }
 
         return schedule;
+    }
+
+    public static int findFirstNumberIndex(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static int findFirstAlphabeticalLetter(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
+            if (Character.isLetter(currentChar)) {
+                return i;
+            }
+        }
+
+        return '\0';
+    }
+
+    public static int findSecondSpace(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ' ') {
+                count++;
+                if (count == 2) {
+                    return i;
+                }
+
+            }
+        }
+        return -1;
+    }
+
+    public static int checkIfNextNumber(String str, int index) {
+        if (Character.isDigit(str.charAt(index + 1))) {
+            return index + 2;
+        } else {
+            return index + 1;
+        }
+    }
+
+    public static int countEmployees(String filePath) {
+        int count = 0;
+        try {
+            File file = new File(filePath);
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (line.toLowerCase().contains("manager") ||
+                        line.toLowerCase().contains("rotation floater") ||
+                        line.toLowerCase().contains("senior rotation") ||
+                        line.toLowerCase().contains("order filler") ||
+                        line.toLowerCase().contains("full-time") ||
+                        line.toLowerCase().contains("station manager")) {
+                    count++;
+                }
+            }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return count;
+    }
+
+    public static Employee createAnEmployee(String line, String position) {
+        int shiftStart = Integer.parseInt(line.substring(findFirstNumberIndex(line),
+                checkIfNextNumber(line, findFirstNumberIndex(line))));
+        if (line.substring(findFirstNumberIndex(line),
+                checkIfNextNumber(line, findFirstNumberIndex(line)) + 4).toLowerCase().contains("pm")
+                && shiftStart != 12) {
+            shiftStart += 12;
+        }
+        line = line.substring(checkIfNextNumber(line, findFirstNumberIndex(line)));
+        int shiftEnd = Integer.parseInt(line.substring(findFirstNumberIndex(line),
+                checkIfNextNumber(line, findFirstNumberIndex(line))));
+        if (line.substring(findFirstNumberIndex(line),
+                checkIfNextNumber(line, findFirstNumberIndex(line)) + 4).toLowerCase().contains("pm")
+                && shiftEnd != 12) {
+            shiftEnd += 12;
+        }
+
+        line = line.substring(checkIfNextNumber(line, findFirstNumberIndex(line)));
+
+        line = line.substring(findFirstNumberIndex(line));
+        int startIndex = findFirstAlphabeticalLetter(line);
+        line = line.substring(startIndex);
+
+        String name;
+
+        if (findSecondSpace(line) == -1) {
+            name = line;
+        } else {
+            name = line.substring(0, findSecondSpace(line));
+        }
+
+        int index = findFirstAlphabeticalLetter(name);
+
+        String firstName = name.substring(index, name.substring(index).indexOf(" "));
+
+        String lastName = name.substring(firstName.length() + 1);
+
+        String lastInitial = lastName.substring(0, 1);
+        
+        lastInitial = lastInitial.replaceAll("[^a-zA-Z]", "");
+
+        name = firstName + " " + lastInitial;
+
+        Employee employee = new Employee(name, position, shiftStart, shiftEnd);
+        return employee;
+    }
+
+    public static Employee[] employeeScanIn(String filePath) {
+        int count = 0;
+        Employee[] employees = new Employee[countEmployees(filePath)];
+        String position = "";
+
+        try {
+            File file = new File(filePath);
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (line.toLowerCase().contains("manager") ||
+                        line.toLowerCase().contains("rotation floater") ||
+                        line.toLowerCase().contains("senior rotation") ||
+                        line.toLowerCase().contains("order filler") ||
+                        line.toLowerCase().contains("full-time") ||
+                        line.toLowerCase().contains("station manager")) {
+
+                    if (line.toLowerCase().contains("manager")) {
+                        position = "Manager";
+                        employees[count] = createAnEmployee(line, position);
+                    } else if (line.toLowerCase().contains("rotation floater")) {
+                        position = "Rotation Floater";
+                        employees[count] = createAnEmployee(line, position);
+                    } else if (line.toLowerCase().contains("senior rotation")) {
+                        position = "Senior Rotation";
+                        employees[count] = createAnEmployee(line, position);
+                    } else if (line.toLowerCase().contains("order filler")) {
+                        position = "Order Filler";
+                        employees[count] = createAnEmployee(line, position);
+                    } else if (line.toLowerCase().contains("full-time")) {
+                        position = "Full-Time";
+                        employees[count] = createAnEmployee(line, position);
+                    } else if (line.toLowerCase().contains("station manager")) {
+                        position = "Station Manager";
+                        employees[count] = createAnEmployee(line, position);
+                    }
+
+                    count++;
+                }
+            }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return employees;
     }
 
     public Employee[] createEmployees(String[] employeeStrings) {

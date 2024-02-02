@@ -25,6 +25,30 @@ public class HalfHourIntervals {
         }
         return total;
     }
+    public String createSchedule(String filePath) {
+
+        ScanIn scanner = new ScanIn();
+        Employee[] daysShift30 = scanner.employeeScanIn(filePath);
+
+        String total = "";
+        for (int x = 0; x < daysShift30.length; x++) {
+            String employeeName = daysShift30[x].getName();
+            if (daysShift30[x].getShiftStart() < 13 && daysShift30[x].getShiftEnd() < 13) {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + daysShift30[x].getShiftStart() +
+                        "-" + daysShift30[x].getShiftEnd() + ". ");
+            } else if (daysShift30[x].getShiftStart() < 13 && daysShift30[x].getShiftEnd() >= 13) {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + daysShift30[x].getShiftStart() +
+                        "-" + (daysShift30[x].getShiftEnd() - 12) + ". ");
+            } else {
+                total += (employeeName + ", " + daysShift30[x].getPositionName() + ", "
+                        + (daysShift30[x].getShiftStart() - 12) +
+                        "-" + (daysShift30[x].getShiftEnd() - 12) + ". ");
+            }
+        }
+        return total;
+    }
     public String createRotations(Employee[] daysShift30, int startInput, int endInput, int linesInput, int cashiersInput, int orderTakersInput) throws FileNotFoundException, UnsupportedEncodingException {
 
         // Vars
@@ -76,6 +100,31 @@ public class HalfHourIntervals {
                     x = scrambled[z];
                     daysShift30 = random.assignAOrderTaker(daysShift30, positions, may30, hour, i,
                             x, p);
+                }
+            }
+
+            // to check if everyone is assigned
+
+            // to create the rotations
+            for (int p = 0; p < may30.getNumCashiers(); p++) {
+                if (!positions[i - may30.getStart()].hasCashier(p)) {
+                    for (int x = 0; x < daysShift30.length; x++) {
+                        if (daysShift30[x].isOnShift(hour) && daysShift30[x].getPosition() < 3
+                        && !daysShift30[x].isOnRotations(may30, i, positions)) {
+                            positions[i-may30.getStart()].changeCashier(daysShift30[x].getName(), p);
+                        }
+                    }
+                }
+            }
+
+            for (int p = 0; p < may30.getNumOrderTakers(); p++) {
+                if (!positions[i - may30.getStart()].hasOrderTaker(p)) {
+                    for (int x = 0; x < daysShift30.length; x++) {
+                        if (daysShift30[x].isOnShift(hour) && daysShift30[x].getPosition() < 3
+                        && !daysShift30[x].isOnRotations(may30, i, positions)) {
+                            positions[i-may30.getStart()].changeOrderTaker(daysShift30[x].getName(), p);
+                        }
+                    }
                 }
             }
 

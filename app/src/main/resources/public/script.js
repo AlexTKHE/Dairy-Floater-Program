@@ -63,10 +63,11 @@ function showInstructions() {
 function createSchedule() {
     const apiUrl = '/number/employees';
     const numInputValue = document.getElementById('numInput').value;
+    let newText = numInputValue.replace("<br>", '\n');
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded'
     };
-    const data = `n=${numInputValue}`;
+    const data = `n=${newText}`;
 
     fetch(apiUrl, {
         method: 'POST',
@@ -130,24 +131,7 @@ function createSchedule() {
             
 
 
-            // if (finalText1.substring(finalText1.length - 5).includes("<br>")) {
-            //     finalText1 = finalText1.substring(0, finalText1.length - 5) + finalText1.substring(finalText1.length - 5, finalText1.lastIndexOf("."));
-
-            // }
-            // if (finalText1.substring(finalText1.length - 5).includes("<br>")) {
-            //     finalText1 = finalText1.substring(0, finalText1.length - 5) + finalText1.substring(finalText1.length - 5, finalText1.lastIndexOf("."));
-
-            // }
-            // if (finalText2.substring(finalText2.length - 5).includes("<br>")) {
-            //     finalText2 = finalText2.substring(0, finalText2.length - 5) + finalText2.substring(finalText2.length - 5, finalText2.lastIndexOf("."));
-            // }
-            // if (finalText2.substring(finalText2.length - 5).includes("<br>")) {
-            //     finalText2 = finalText2.substring(0, finalText2.length - 5) + finalText2.substring(finalText2.length - 5, finalText2.lastIndexOf("."));
-            // }
-            // finalText1 = finalText1.trim();
-            // if (finalText1.charAt(finalText1.length - 1) !== ".") {
-            //     finalText1 += ".";
-            // }
+          
 
 
            

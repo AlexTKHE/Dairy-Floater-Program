@@ -4,74 +4,74 @@ Rotation Schedule for the day will be:
 Walk-ups: 
  
 
-2:00-2:30 PM:         Cashier   1:            Jana   Order Taker   1:         Tabitha   Order Taker   2:          Corine   
-2:30-3:00 PM:         Cashier   1:         Horatia   Order Taker   1:        Gerianne   Order Taker   2:        Maureene   
-3:00-3:30 PM:         Cashier   1:           Terza   Order Taker   1:          Pamela   Order Taker   2:         Harmony   
-3:30-4:00 PM:         Cashier   1:          Corine   Order Taker   1:         Harmony   Order Taker   2:            Jana   
-4:00-4:30 PM:         Cashier   1:         Harmony   Order Taker   1:            Jana   Order Taker   2:             Bea   
-4:30-5:00 PM:         Cashier   1:           Tabbi   Order Taker   1:           Terza   Order Taker   2:        Maureene   
-5:00-5:30 PM:         Cashier   1:        Danyette   Order Taker   1:           Terza   Order Taker   2:         Harmony   
-5:30-6:00 PM:         Cashier   1:            Bebe   Order Taker   1:         Evelina   Order Taker   2:          Corine   
-6:00-6:30 PM:         Cashier   1:          Ingrid   Order Taker   1:          Steffi   Order Taker   2:        Maureene   
-6:30-7:00 PM:         Cashier   1:         Evelina   Order Taker   1:           Billi   Order Taker   2:           Tommi   
-7:00-7:30 PM:         Cashier   1:          Janina   Order Taker   1:           Terza   Order Taker   2:        Katerine   
-7:30-8:00 PM:         Cashier   1:           Terza   Order Taker   1:           Tommi   Order Taker   2:           Billi   
-8:00-8:30 PM:         Cashier   1:           Karin   Order Taker   1:         Delinda   Order Taker   2:        Gerianne   
-8:30-9:00 PM:         Cashier   1:           Lisha   Order Taker   1:        Maureene   Order Taker   2:          Janina   
+2:00-2:30 PM:         Cashier   1:         Tyler W   Order Taker   1:       Emerson M   Order Taker   2:          Jack G   
+2:30-3:00 PM:         Cashier   1:         Tyler W   Order Taker   1:         Alden H   Order Taker   2:        Julian B   
+3:00-3:30 PM:         Cashier   1:       Emerson M   Order Taker   1:         Tyler W   Order Taker   2:        Olivia M   
+3:30-4:00 PM:         Cashier   1:        Ashlyn M   Order Taker   1:      Jacklynn B   Order Taker   2:         Bodie G   
+4:00-4:30 PM:         Cashier   1:         Bodie G   Order Taker   1:        Julian B   Order Taker   2:         Chloe G   
+4:30-5:00 PM:         Cashier   1:       Brandon D   Order Taker   1:        Lainey S   Order Taker   2:        Daniel C   
+5:00-5:30 PM:         Cashier   1:         Bodie G   Order Taker   1:      Serenity C   Order Taker   2:       Brandon D   
+5:30-6:00 PM:         Cashier   1:        Lainey S   Order Taker   1:      Juliette N   Order Taker   2:         Alden H   
+6:00-6:30 PM:         Cashier   1:        Elijah L   Order Taker   1:          Alex T   Order Taker   2:        Ashley A   
+6:30-7:00 PM:         Cashier   1:      Serenity C   Order Taker   1:       Brandon D   Order Taker   2:         Grant I   
+7:00-7:30 PM:         Cashier   1:       Melissa M   Order Taker   1:         Anisa S   Order Taker   2:        Ashley A   
+7:30-8:00 PM:         Cashier   1:       Melissa M   Order Taker   1:         Grant I   Order Taker   2:          Alex T   
+8:00-8:30 PM:         Cashier   1:      Serenity C   Order Taker   1:         Gavin H   Order Taker   2:          Luke Y   
+8:30-9:00 PM:         Cashier   1:         Anisa S   Order Taker   1:       Melissa M   Order Taker   2:        Elijah L   
  
  
 Driveway: 
  
 
-2:00-2:30 PM:         Cashier   1:        Maureene   Order Taker   1:         Heloise   Order Taker   2:         Evelina   
-2:30-3:00 PM:         Cashier   1:           Nydia   Order Taker   1:           Terza   Order Taker   2:        Danyette   
-3:00-3:30 PM:         Cashier   1:           Karin   Order Taker   1:         Evelina   Order Taker   2:          Corine   
-3:30-4:00 PM:         Cashier   1:          Pamela   Order Taker   1:         Heloise   Order Taker   2:           Tommi   
-4:00-4:30 PM:         Cashier   1:        Gerianne   Order Taker   1:          Corine   Order Taker   2:         Evelina   
-4:30-5:00 PM:         Cashier   1:         Harmony   Order Taker   1:           Tommi   Order Taker   2:         Tabitha   
-5:00-5:30 PM:         Cashier   1:          Corine   Order Taker   1:           Tommi   Order Taker   2:            Jana   
-5:30-6:00 PM:         Cashier   1:         Harmony   Order Taker   1:        Danyette   Order Taker   2:          Pamela   
-6:00-6:30 PM:         Cashier   1:         Delinda   Order Taker   1:        Odelinda   Order Taker   2:           Tommi   
-6:30-7:00 PM:         Cashier   1:        Willetta   Order Taker   1:           Karin   Order Taker   2:          Ingrid   
-7:00-7:30 PM:         Cashier   1:           Nerte   Order Taker   1:         Evelina   Order Taker   2:           Billi   
-7:30-8:00 PM:         Cashier   1:           Lisha   Order Taker   1:          Annora   Order Taker   2:      Ermengarde   
-8:00-8:30 PM:         Cashier   1:        Odelinda   Order Taker   1:         Harmony   Order Taker   2:          Steffi   
-8:30-9:00 PM:         Cashier   1:           Billi   Order Taker   1:        Willetta   Order Taker   2:          Annora   
+2:00-2:30 PM:         Cashier   1:        Ashlyn M   Order Taker   1:        Julian B   Order Taker   2:      Jacklynn B   
+2:30-3:00 PM:         Cashier   1:        Daniel C   Order Taker   1:          Maya M   Order Taker   2:        Olivia M   
+3:00-3:30 PM:         Cashier   1:        Ashlyn M   Order Taker   1:          Jack G   Order Taker   2:        Julian B   
+3:30-4:00 PM:         Cashier   1:         Tyler W   Order Taker   1:        Julian B   Order Taker   2:         Alden H   
+4:00-4:30 PM:         Cashier   1:       Emerson M   Order Taker   1:        Lainey S   Order Taker   2:         Tyler W   
+4:30-5:00 PM:         Cashier   1:        Maylen M   Order Taker   1:         Isaac H   Order Taker   2:         Alden H   
+5:00-5:30 PM:         Cashier   1:         Tyler W   Order Taker   1:         Alden H   Order Taker   2:        Maylen M   
+5:30-6:00 PM:         Cashier   1:          Alex T   Order Taker   1:         Chloe G   Order Taker   2:         Tyler W   
+6:00-6:30 PM:         Cashier   1:         Grant I   Order Taker   1:         Bodie G   Order Taker   2:         Chloe G   
+6:30-7:00 PM:         Cashier   1:         Anisa S   Order Taker   1:        Ashley A   Order Taker   2:         Bodie G   
+7:00-7:30 PM:         Cashier   1:         Grant I   Order Taker   1:         Gavin H   Order Taker   2:          Alex T   
+7:30-8:00 PM:         Cashier   1:      Serenity C   Order Taker   1:         Gavin H   Order Taker   2:        Elijah L   
+8:00-8:30 PM:         Cashier   1:         Jacob S   Order Taker   1:         Anisa S   Order Taker   2:        Elijah L   
+8:30-9:00 PM:         Cashier   1:          Alex T   Order Taker   1:        Ashley A   Order Taker   2:         Jacob S   
  
  
 Curb: 
  
 
-2:00-2:30 PM:         Order Taker   1:          Pamela   Order Taker   2:             Bea   
-2:30-3:00 PM:         Order Taker   1:         Evelina   Order Taker   2:         Pauline   
-3:00-3:30 PM:         Order Taker   1:           Tommi   Order Taker   2:          Lorrin   
-3:30-4:00 PM:         Order Taker   1:        Gerianne   Order Taker   2:        Danyette   
-4:00-4:30 PM:         Order Taker   1:        Maureene   Order Taker   2:         Horatia   
-4:30-5:00 PM:         Order Taker   1:         Evelina   Order Taker   2:          Corine   
-5:00-5:30 PM:         Order Taker   1:         Pauline   Order Taker   2:         Horatia   
-5:30-6:00 PM:         Order Taker   1:        Gerianne   Order Taker   2:         Pauline   
-6:00-6:30 PM:         Order Taker   1:        Willetta   Order Taker   2:           Hazel   
-6:30-7:00 PM:         Order Taker   1:      Ermengarde   Order Taker   2:          Annora   
-7:00-7:30 PM:         Order Taker   1:           Lisha   Order Taker   2:        Odelinda   
-7:30-8:00 PM:         Order Taker   1:        Katerine   Order Taker   2:          Janina   
-8:00-8:30 PM:         Order Taker   1:           Terza   Order Taker   2:           Lisha   
-8:30-9:00 PM:         Order Taker   1:         Delinda   Order Taker   2:           Tommi   
+2:00-2:30 PM:         Order Taker   1:         Riley Y   Order Taker   2:        Maylen M   
+2:30-3:00 PM:         Order Taker   1:         Isaac H   Order Taker   2:          Jack G   
+3:00-3:30 PM:         Order Taker   1:        Maylen M   Order Taker   2:         Riley Y   
+3:30-4:00 PM:         Order Taker   1:        Maylen M   Order Taker   2:        Daniel C   
+4:00-4:30 PM:         Order Taker   1:       Brandon D   Order Taker   2:          Alex T   
+4:30-5:00 PM:         Order Taker   1:          Alex T   Order Taker   2:      Juliette N   
+5:00-5:30 PM:         Order Taker   1:         Chloe G   Order Taker   2:       Emerson M   
+5:30-6:00 PM:         Order Taker   1:        Maylen M   Order Taker   2:        Daniel C   
+6:00-6:30 PM:         Order Taker   1:      Serenity C   Order Taker   2:          Luke Y   
+6:30-7:00 PM:         Order Taker   1:        Devlyn K   Order Taker   2:         Chloe G   
+7:00-7:30 PM:         Order Taker   1:      Serenity C   Order Taker   2:         Jacob S   
+7:30-8:00 PM:         Order Taker   1:         Anisa S   Order Taker   2:        Ashley A   
+8:00-8:30 PM:         Order Taker   1:        Ashley A   Order Taker   2:          Alex T   
+8:30-9:00 PM:         Order Taker   1:          Luke Y   Order Taker   2:         Grant I   
  
  
 Floaters: 
  
 
-2:00-2:30 PM:         Order Taker   1:        Gerianne   
-2:30-3:00 PM:         Order Taker   1:         Tabitha   
-3:00-3:30 PM:         Order Taker   1:         Horatia   
-3:30-4:00 PM:         Order Taker   1:          Lorrin   
-4:00-4:30 PM:         Order Taker   1:           Terza   
-4:30-5:00 PM:         Order Taker   1:             Bea   
-5:00-5:30 PM:         Order Taker   1:         Tabitha   
-5:30-6:00 PM:         Order Taker   1:        Maureene   
-6:00-6:30 PM:         Order Taker   1:           Billi   
-6:30-7:00 PM:         Order Taker   1:           Hazel   
-7:00-7:30 PM:         Order Taker   1:          Annora   
-7:30-8:00 PM:         Order Taker   1:           Nerte   
-8:00-8:30 PM:         Order Taker   1:        Maureene   
-8:30-9:00 PM:         Order Taker   1:           Nerte   
+2:00-2:30 PM:         Order Taker   1:         Isaac H   
+2:30-3:00 PM:         Order Taker   1:       Emerson M   
+3:00-3:30 PM:         Order Taker   1:          Maya M   
+3:30-4:00 PM:         Order Taker   1:          Maya D   
+4:00-4:30 PM:         Order Taker   1:        Maylen M   
+4:30-5:00 PM:         Order Taker   1:        Julian B   
+5:00-5:30 PM:         Order Taker   1:        Daniel C   
+5:30-6:00 PM:         Order Taker   1:       Brandon D   
+6:00-6:30 PM:         Order Taker   1:        Devlyn K   
+6:30-7:00 PM:         Order Taker   1:          Alex T   
+7:00-7:30 PM:         Order Taker   1:        Elijah L   
+7:30-8:00 PM:         Order Taker   1:        Devlyn K   
+8:00-8:30 PM:         Order Taker   1:       Melissa M   
+8:30-9:00 PM:         Order Taker   1:        Devlyn K   

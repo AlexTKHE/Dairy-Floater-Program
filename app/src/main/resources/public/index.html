@@ -60,11 +60,13 @@
     </div>
 
     <div class="apiInput">
-        <label for="numInput">Number Of Employees:</label>
-        <!-- Use type="number" to restrict input to numeric values -->
-        <input type="number" id="numInput" name="numInput" onkeydown="validateNumericInput(event)">
+        <div class="inputGroup">
+            <label for="numInput">Copy and Paste Schedule from W2W:</label>
+            <!-- Use type="number" to restrict input to numeric values -->
+            <input type="text" id="numInput" name="numInput">
 
-        <button id="callApiWithNumber">Create Schedule</button>
+            <button id="callApiWithNumber">Create Schedule</button>
+        </div>
     </div>
 
     <button id="hiddenButton" style="display: none;" onclick="openRotations()">Rotations -></button>
@@ -75,7 +77,7 @@
         <div id="apiResponse3" contenteditable="true" onblur="setApiResponseThrees()"></div>
     </div>
 
-    
+
 
     <script src="script.js"></script>
 </body>

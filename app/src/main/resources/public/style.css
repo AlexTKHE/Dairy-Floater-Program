@@ -177,7 +177,7 @@ label[for="numInput"] {
 .apiCalls {
     position: relative;
     background-color: #EBD9B0;
-    left: 100%;
+    left: 75%;
     transform: translateX(-50%);
     top: 300px;
     display: flex;
@@ -186,6 +186,7 @@ label[for="numInput"] {
     color: #6C2B40;
     z-index: 5;
     overflow-x: auto;
+    padding: 1%;
 }
 
 #apiResponse1,
@@ -197,7 +198,7 @@ label[for="numInput"] {
     color: #6C2B40;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-right: 10px; 
+    margin-right: 20px; 
 }
 
 [contenteditable="true"] {

@@ -1,2 +1,17 @@
-rawr
-bKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="schedule"Engracia,Order Filler,2-9<br>  Margo,Rotation Floater,6-9<br>  Phylys,Rotation Floater,6-9<br>  Arleyne,Rotation Floater,8-2<br>  Hilde,Rotation Floater,12-4<br>  Chelsea,Order Filler,12-4<br>  Vina,Rotation Floater,6-9<br>  Marna,Rotation Floater,6-9<br>  Tracee,Rotation Floater,2-9.<br>Laverne,Rotation Floater,6-9<br>  Debor,Rotation Floater,2-9<br>  Billie,Rotation Floater,6-9<br>  Fianna,Station Manager,8-2<br>  Shirl,Rotation Floater,12-4<br>  Lyndsie,Order Filler,2-9<br>  Sheela,Station Manager,2-9<br>  Norean,Station Manager,2-9<br>  <br>Patience,Order Filler,6-9<br>  Ashlee,Station Manager,6-9<br>  Prudi,Rotation Floater,2-9<br>  Marcille,Station Manager,11-4<br>  Cherey,Rotation Floater,12-4<br>  Alissa,Rotation Floater,6-9<br>  Kirsti,Rotation Floater,6-9<br>  Tatiania,Rotation Floater,6-9.<br>------WebKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="lineInput"2------WebKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="startInput"2------WebKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="endInput"9------WebKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="cashiersInput"2------WebKitFormBoundarygEWjYM5dA0lFcfmyContent-Disposition: form-data; name="orderTakersInput"2------WebKitFormBoundarygEWjYM5dA0lFcfmy--
+	Manager	6am-2pm	8.0	Colin Dixon		
+	Full-Time	6am-2pm	8.0	Brett Vandenburg		
+	Full-Time	9am-5pm	8.0	Adam Marks		
+	Full-Time	9am-5pm	8.0	Sheena Seymour		
+	Order Filler	10am-4pm	6.0	Caroline Tan		
+	Order Filler	11am-4pm	5.0	Haley Lombardi		
+	Order Filler	2pm-6pm	4.0	Gregor Murphy		
+	Order Filler	2pm-7pm	5.0	Brandon Niermeyer		
+	Manager	2pm-8pm	6.0	Kim Ebbers		
+	Rotation Floater	3pm-6pm	3.0	Olivia Medinas		
+	Rotation Floater	3pm-8pm	5.0	Ethan Schuchardt		
+	Rotation Floater	4pm-6pm	2.0	Mia Trejo		
+	Order Filler	5pm-8pm	3.0	Jacob Schuchardt		
+	Order Filler	5pm-8pm	3.0	Sophie Todor		
+	Manager	5pm-8pm	3.0	Emily Schuchardt		
+	Order Filler	6pm-8pm	2.0	Maisha Sharma		
+	Rotation Floater	6pm-8pm	2.0	Elijah Lammle

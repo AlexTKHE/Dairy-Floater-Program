@@ -92,11 +92,22 @@ public class App {
 
         Spark.post("/number/employees", (req, res) -> {
             // Retrieve the value of 'n' from the request
-            int n = Integer.parseInt(req.queryParams("n"));
+           // int n = Integer.parseInt(req.queryParams("n"));
 
-            // Use 'n' as needed in your HalfHourIntervals or other logic
+            String whenWorkSched = req.queryParams("n");
+            
+            String filePath = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/test.txt";
+            String type =  "UTF-8";
+          
+            PrintWriter writer = new PrintWriter(filePath, type);
 
-            return scheduleCreator.createSchedule(n);
+            whenWorkSched = whenWorkSched.replaceAll("\t{2,}", "\n");
+
+            writer.println(whenWorkSched);
+
+            writer.close();
+
+            return scheduleCreator.createSchedule(filePath);
             // return "Alli, Station Manager, 6-9.";
         });
 
