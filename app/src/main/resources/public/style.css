@@ -147,7 +147,7 @@ body {
     z-index: 1;
 }
 
-label[for="numInput"] {
+label[for="scheduleInput"] {
     font-family: 'Cascadia Code', monospace;
     font-size: 26px;
     font-weight: bold;
@@ -155,13 +155,20 @@ label[for="numInput"] {
     margin-bottom: 8px;
 }
 
-#numInput {
+#numInput,
+#scheduleInput {
     appearance: textfield;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
     width: 13%;
-    font-size: 26px;
+    height: 30px;
+    transform: translate(0%, 25%);
+    font-size: 13px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
     color: #EBD9B0;
+    /* white-space: pre; */
     background-color: #6C2B40;
 }
 
@@ -289,6 +296,21 @@ label[for="orderTakersInput"] {
     z-index: 5;
     margin-left: 20px;
     /* Adjusted margin for spacing */
+}
+
+#exportRotationsButton {
+    margin-top: 10px;
+    /* Adjusted margin for spacing */
+    background-color: #6C2B40;
+    color: #EBD9B0;
+    border: 2px solid #EBD9B0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 20px; 
+    display: none;
 }
 
 .rotations {

@@ -14,7 +14,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.file.Path;
 import java.util.Arrays;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
+
+import org.eclipse.jetty.client.api.Response;
 
 import com.google.common.base.Utf8;
 
@@ -90,6 +95,8 @@ public class App {
             return "Hi, Kirk, this API call worked";
         });
 
+
+        
         Spark.post("/number/employees", (req, res) -> {
             // Retrieve the value of 'n' from the request
            // int n = Integer.parseInt(req.queryParams("n"));
@@ -101,7 +108,7 @@ public class App {
           
             PrintWriter writer = new PrintWriter(filePath, type);
 
-            whenWorkSched = whenWorkSched.replaceAll("\t{2,}", "\n");
+            // whenWorkSched = whenWorkSched.replaceAll("\t{2,}", "\n");
 
             writer.println(whenWorkSched);
 
@@ -109,6 +116,22 @@ public class App {
 
             return scheduleCreator.createSchedule(filePath);
             // return "Alli, Station Manager, 6-9.";
+        });
+
+        Spark.post("/downloadFile", (req, res) -> {
+            String filePath = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/rotations.txt";
+            try {
+            
+            res.header("Content-Disposition", "attachment; filename=rotations.txt");
+            res.type("text/plain");
+
+            return Files.newInputStream(Path.of(filePath));
+            
+            } catch (IOException e) {
+                e.printStackTrace();
+                res.status(500);
+                return "Error generating the file.";
+            }
         });
 
         Spark.post("/api/createRotations", (req, res) -> {

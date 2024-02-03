@@ -120,8 +120,8 @@ public class Randomize {
 
     public Employee[] assignACashier(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30,
             int hour, int halfHour, int employee, int takerNum) {
-        if (!positions[halfHour-may30.getStart()].hasCashier(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() < 3
-                && daysShift30[employee].canFloat()) {
+        if (!positions[halfHour-may30.getStart()].hasCashier(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() == 1
+                && daysShift30[employee].shouldFloat()) {
             // if the person is avaliable it will put them on the part cashier
             positions[halfHour - may30.getStart()].changeCashier(daysShift30[employee].getName(), takerNum);
             daysShift30[employee].changeFloat(false);
@@ -132,8 +132,8 @@ public class Randomize {
     public Employee[] assignAOrderTaker(Employee[] daysShift30, CurrentPositions[] positions, Schedule may30,
              int hour, int halfHour, int employee, int takerNum) {
         
-        if (!positions[halfHour-may30.getStart()].hasOrderTaker(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() < 3
-                && daysShift30[employee].canFloat()) {
+        if (!positions[halfHour-may30.getStart()].hasOrderTaker(takerNum) && daysShift30[employee].isOnShift(hour) && daysShift30[employee].getPosition() == 1
+                && daysShift30[employee].shouldFloat()) {
             // if the person is avaliable it will put them on the part cashier
             positions[halfHour - may30.getStart()].changeOrderTaker(daysShift30[employee].getName(), takerNum);
             daysShift30[employee].changeFloat(false);

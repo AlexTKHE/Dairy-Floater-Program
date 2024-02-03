@@ -1,38 +1,45 @@
-Full-Time	7am-2pm	7.0	Sheena Seymour
- 	Rotation Floater	8am-2pm	6.0	Colin Harrison
- 	Full-Time	9am-2pm	5.0	Reina Dayrit
- 	Rotation Floater	9am-6pm	9.0	Julian Blank-Quiroz
- 	Training	11am-3pm	4.0
- 	Order Filler	11am-4pm	5.0	Maya Derting
- 	Order Filler	11am-4pm	5.0	Maya Martinez
- 	Rotation Floater	11am-4pm	5.0	Riley Young
- 	Order Filler	12pm-4pm	4.0	Jack Golden
- 	Order Filler	12pm-4pm	4.0	Olivia Marcoux
- 	Rotation Floater	12pm-4pm	4.0	Jacklynn Barragan
- 	Order Filler	1pm-5pm	4.0	Ashlyn McKinley
- 	Rotation Floater	1pm-5pm	4.0	Isaac Hilton
- 	Order Filler	2pm-6pm	4.0	Alden Hofstede
- 	Order Filler	2pm-6pm	4.0	Maylen Montoya
- 	Rotation Floater	2pm-6pm	4.0	Daniel Cruz
- 	Rotation Floater	2pm-6pm	4.0	Emerson Muise
- 	Rotation Floater	2pm-6pm	4.0	Tyler Walsh
- 	Training Manager	2pm-9pm	7.0	Nick McMillin
- 	Training	3pm-6pm	3.0
- 	Rotation Floater	3pm-6pm	3.0	Lainey Snowden
- 	Rotation Floater	3pm-7pm	4.0	Bodie Gentile
- 	Order Filler	4pm-7pm	3.0	Brandon Daoust
- 	Order Filler	4pm-7pm	3.0	Chloe Grijalva
- 	Order Filler	4pm-7pm	3.0	Juliette Nudelman
- 	Order Filler	4pm-9pm	5.0	Grant Inman
- 	Rotation Floater	4pm-9pm	5.0	Alex Thompson
- 	Training Manager	4pm-9pm	5.0	Josef Trueblood
- 	Rotation Floater	5pm-9pm	4.0	Serenity Chen
- 	Training	6pm-9pm	3.0
- 	Order Filler	6pm-9pm	3.0	Ashley Alcantar
- 	Rotation Floater	6pm-9pm	3.0	Devlyn Kinnear
- 	Rotation Floater	6pm-9pm	3.0	Elijah Lammle
- 	Rotation Floater	6pm-9pm	3.0	Anisa Shedd
- 	Rotation Floater	6pm-9pm	3.0	Luke Yamashita
- 	Order Filler	7pm-9pm	2.0	Jacob Schuchardt
- 	Rotation Floater	7pm-9pm	2.0	Gavin Haus
- 	Rotation Floater	7pm-9pm	2.0	Melissa McMillin
+Manager	8am-4pm	8.0	Reilly Reese (deleted)		20
+	Manager	8am-4pm	8.0	David Thoe (deleted)		20
+	Rotation Floater	9am-4pm	7.0	Alex Thompson	b	15
+	Training	10am-1pm	3.0	Liam Shedd		
+	Training	10am-2pm	4.0	Grant Inman		
+	Order Filler	10am-2pm	4.0	Brandon Niermeyer		10
+	Rotation Floater	10am-2pm	4.0	Devlyn Kinnear		
+	Training	11am-3pm	4.0	Emma Nguyen		
+	Rotation Floater	11am-3pm	4.0	Brooklyn Still	b	
+	Rotation Floater	11am-3pm	4.0	Mackenzie Wright	b	
+	Rotation Floater	12pm-4pm	4.0	Olivia Walinski (deleted)	b	
+	Rotation Floater	12pm-6pm	6.0	Breanna Huff	a	
+	Order Filler	1pm-5pm	4.0	Chloe Grijalva	c	
+	Order Filler	1pm-5pm	4.0	Siena Kinnear	c	
+	Order Filler	1pm-5pm	4.0	Riley Rohr	c	
+	Order Filler	1pm-5pm	4.0	Luke Yamashita	c	
+	Rotation Floater	1pm-5pm	4.0	Jacklynn Barragan	c	
+	Rotation Floater	1pm-5pm	4.0	Isaac Hilton	c	
+	Rotation Floater	1pm-5pm	4.0	Renna Popli (deleted)	c	
+	Order Filler	2pm-6pm	4.0	Maya Derting	a	
+	Order Filler	2pm-6pm	4.0	Maya Martinez	a	
+	Rotation Floater	2pm-6pm	4.0	Emerson Muise	a	2-5 covered by Nick M
+	Full-Time	2pm-9pm	7.0	Sheena Seymour		
+	Training	3pm-6pm	3.0	Tony Xiao		
+	Order Filler	3pm-7pm	4.0	Alden Hofstede	b	
+	Order Filler	3pm-7pm	4.0	Maylen Montoya	b	
+	Order Filler	3pm-7pm	4.0	Camille Richards	b	
+	Order Filler	3pm-7pm	4.0	Zoe Triantos	b	
+	Rotation Floater	3pm-7pm	4.0	Mason Basbas	b	
+	Rotation Floater	3pm-7pm	4.0	Elena Derting	b	
+	Rotation Floater	3pm-9pm	6.0	Emily Schuchardt		
+	Manager	4pm-9pm	5.0	Leah Shinnick		
+	Order Filler	5pm-9pm	4.0	Brandon Daoust	c	
+	Order Filler	5pm-9pm	4.0	Liam Yung (deleted)	c	
+	Rotation Floater	5pm-9pm	4.0	Serenity Chen	c	
+	Rotation Floater	5pm-9pm	4.0	Sydney Head	c	
+	Rotation Floater	5pm-9pm	4.0	Nick McMillin	c	
+	Senior Rotation	5pm-9pm	4.0	Sam Montoya (deleted)		
+	Training	6pm-9pm	3.0	Marcos Vergara		
+	Order Filler	6pm-9pm	3.0	Jesslyn Ishikata	a	
+	Order Filler	6pm-9pm	3.0	Noah Ventura	a	
+	Rotation Floater	6pm-9pm	3.0	Amishi Bhatia	a	
+	Rotation Floater	6pm-9pm	3.0	Kylie Schuchardt	a	
+	Rotation Floater	6pm-9pm	3.0	Anisa Shedd	a	
+	Order Filler	7pm-9pm	2.0	Ashley Alcantar	b

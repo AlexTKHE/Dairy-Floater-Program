@@ -6,7 +6,7 @@ public class Employee {
     private int employeeShiftLength = 0;
     private int employeeShiftStart = 0;
     private int employeeShiftEnd = 0;
-    private int shouldFloat = 0;
+    private int shouldFloatTrack = 0;
     private boolean canFloat = true;
     
         public Employee(String name, String position, int shiftStart, int shiftEnd) {
@@ -65,26 +65,30 @@ public class Employee {
         return employeePosition;
     }
 
+    public boolean shouldFloat() {
+        if(shouldFloatTrack == 0) {
+            return true;
+        }
+        return false;
+    }
+
+
     public boolean canFloat() {
         return canFloat;
     }
 
     public void changeFloat(boolean t) {
         canFloat = t;
-    }
 
-    public void resetingFloat() {
-        canFloat = true;
-        shouldFloat--;
-    }
+        if (!t) {
+            shouldFloatTrack = 2;
+        }
 
-    public void justFloat() {
-        shouldFloat = 2;
+        if(t && shouldFloatTrack != 0) {
+            shouldFloatTrack--;
+        }
     }
-
-    public boolean shouldFloat() {
-        return shouldFloat == 0;
-    }
+    
 
     public boolean isOnRotations(Schedule may30, int i, CurrentPositions[] positions) {
         for (int p = 0; p < may30.getNumCashiers(); p++) {

@@ -8,7 +8,7 @@ record PositionsRecord(int[] countC, int[] countO) {
 };
 
 public class Write {
-    String outFile = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/output.txt";
+    String outFile = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/rotations.txt";
     private String name1 = "";
     private String name2 = "";
     private String name3 = "";
@@ -226,7 +226,9 @@ public class Write {
 
         PrintWriter writer = new PrintWriter(outFile, "UTF-8");
 
+        PrintWriter test = new PrintWriter("/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/test.txt");
        
+        // createShifts(writer, daysShift30);
 
         // to write the people on cashier or ordertaker at any given time
 

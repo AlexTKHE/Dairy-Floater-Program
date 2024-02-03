@@ -34,7 +34,16 @@ function eraseCookie(name) {
 
 
 
+function handleKeyPress(event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.keyCode === 13) {
+        // Prevent the default behavior (creating a new line or div)
+        event.preventDefault();
 
+        // Insert a line break (<br>) at the current cursor position
+        document.execCommand('insertHTML', false, '<br>');
+    }
+}
 
 function validateNumericInput(event) {
     const allowedKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'Backspace'];
@@ -62,7 +71,7 @@ function showInstructions() {
 
 function createSchedule() {
     const apiUrl = '/number/employees';
-    const numInputValue = document.getElementById('numInput').value;
+    const numInputValue = document.getElementById('scheduleInput').value;
     let newText = numInputValue.replace("<br>", '\n');
     const headers = {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -109,12 +118,12 @@ function createSchedule() {
             if (c - Math.trunc(c / 3) * 3 == 0) {
                 spacedArray1[spacedArray1.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
-                spacedArray1[spacedArray1.length-1] = spacedArray1[spacedArray1.length-1].replace(/<br\s*\/?>/g, "");
+                spacedArray1[spacedArray1.length - 1] = spacedArray1[spacedArray1.length - 1].replace(/<br\s*\/?>/g, "");
 
             } else if (c - Math.trunc(c / 3) * 3 == 1) {
                 spacedArray3[spacedArray3.length - 1] += ".";
                 spacedArray2[spacedArray2.length - 1] += ".";
-                spacedArray1[spacedArray2.length-1] = spacedArray1[spacedArray2.length-1].replace(/<br\s*\/?>/g, "");
+                spacedArray1[spacedArray2.length - 1] = spacedArray1[spacedArray2.length - 1].replace(/<br\s*\/?>/g, "");
 
             } else {
                 spacedArray1[spacedArray1.length - 1] += ".";
@@ -128,13 +137,13 @@ function createSchedule() {
             let finalText2 = spacedArray2.join(".<br>") + "<br> ";
             let finalText3 = spacedArray3.join(".<br>") + "<br> ";
 
-            
 
 
-          
 
 
-           
+
+
+
 
             setCookie('schedule1', finalText1, 1);
             setCookie('schedule2', finalText2, 1);
@@ -173,7 +182,7 @@ function createRotations() {
         getCookie('schedule1'),
         getCookie('schedule2'),
         getCookie('schedule3')
-    ].join('');    
+    ].join('');
     const lineInputValue = document.getElementById('lineInput').value;
     const startInputValue = document.getElementById('startInput').value;
     const endInputValue = document.getElementById('endInput').value;
@@ -217,6 +226,28 @@ function createRotations() {
         .catch(error => {
             console.error('Error:', error);
         });
+
+        document.getElementById('exportRotationsButton').style.display = 'inline-block';
+}
+
+function exportRotations() {
+    const apiUrl = '/downloadFile';
+
+    fetch(apiUrl, {
+        method: 'POST',
+    })
+        .then(res => res.blob())
+        .then(blob => {
+            // create a link then click to downloawd it
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'rotations.txt';
+            link.click();
+        })
+        .catch(error => console.error('Error:', error));
+
+
+    
 }
 
 
@@ -266,7 +297,7 @@ document.getElementById("openRotation").addEventListener("click", openRotations)
 
 document.getElementById("callApiWithNumber").addEventListener("click", callApiWithNumber);
 
-document.getElementById("numInput").addEventListener("keyup", function (event) {
+document.getElementById("scheduleInput").addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
         createSchedule();
         showHiddenButton();

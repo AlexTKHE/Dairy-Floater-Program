@@ -47,12 +47,7 @@
         <button id="resetButton">Reset</button>
     </div>
     <div class="awesome-text">
-        <p id="disclaimer">Disclaimer: This site is still in heavy development, the reason that it randomizes employees
-            is because I
-            dont think I have access on When to Work to export the file. Also there are some bugs with the rotation
-            sheet because sometimes the generated data is faulty.
-            When I gain access I can reconfigure everything to take that data in. If there is anything else that you
-            would like let me know! Merry Christams!
+        <p id="disclaimer">
         </p>
         <p id="instructions">Note: When writing in new employees and/or editing a current one make sure their format is
             in Name (Can be first and/or last),
@@ -61,9 +56,9 @@
 
     <div class="apiInput">
         <div class="inputGroup">
-            <label for="numInput">Copy and Paste Schedule from W2W:</label>
+            <label for="scheduleInput">Copy and Paste Schedule from W2W:</label>
             <!-- Use type="number" to restrict input to numeric values -->
-            <input type="text" id="numInput" name="numInput">
+            <textarea id="scheduleInput" name="scheduleInput" rows="5" placeholder="Paste your schedule here"></textarea>     
 
             <button id="callApiWithNumber">Create Schedule</button>
         </div>
@@ -72,9 +67,9 @@
     <button id="hiddenButton" style="display: none;" onclick="openRotations()">Rotations -></button>
 
     <div class="apiCalls">
-        <div id="apiResponse1" contenteditable="true" onblur="setApiResponseOnes()"></div>
-        <div id="apiResponse2" contenteditable="true" onblur="setApiResponseTwos()"></div>
-        <div id="apiResponse3" contenteditable="true" onblur="setApiResponseThrees()"></div>
+        <div id="apiResponse1" contenteditable="true" onblur="setApiResponseOnes()" onkeydown="handleKeyPress(event)"></div>
+        <div id="apiResponse2" contenteditable="true" onblur="setApiResponseTwos()" onkeydown="handleKeyPress(event)"></div>
+        <div id="apiResponse3" contenteditable="true" onblur="setApiResponseThrees()" onkeydown="handleKeyPress(event)"></div>
     </div>
 
 
