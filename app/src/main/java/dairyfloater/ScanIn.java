@@ -190,12 +190,14 @@ public class ScanIn {
                         line.toLowerCase().contains("senior rotation") ||
                         line.toLowerCase().contains("order filler") ||
                         line.toLowerCase().contains("full-time") ||
-                        line.toLowerCase().contains("station manager")) {
+                        line.toLowerCase().contains("station manager") 
+                        ) {
 
                     if (line.toLowerCase().contains("manager")) {
                         position = "Manager";
                         employees[count] = createAnEmployee(line, position);
-                    } else if (line.toLowerCase().contains("rotation floater")) {
+                    }
+                     else if (line.toLowerCase().contains("rotation floater")) {
                         position = "Rotation Floater";
                         employees[count] = createAnEmployee(line, position);
                     } else if (line.toLowerCase().contains("senior rotation")) {

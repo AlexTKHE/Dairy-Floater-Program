@@ -145,9 +145,9 @@ function createSchedule() {
 
 
 
-            setCookie('schedule1', finalText1, 1);
-            setCookie('schedule2', finalText2, 1);
-            setCookie('schedule3', finalText3, 1);
+            setCookie('schedule1', finalText1, 0.5);
+            setCookie('schedule2', finalText2, 0.5);
+            setCookie('schedule3', finalText3, 0.5);
 
             document.getElementById('apiResponse1').innerHTML = `${finalText1}`;
             document.getElementById('apiResponse2').innerHTML = `${finalText2}`;
