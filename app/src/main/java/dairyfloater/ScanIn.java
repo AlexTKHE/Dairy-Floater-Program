@@ -281,7 +281,7 @@ public class ScanIn {
     }
 
     public String readInRotations(int linesInput) throws IOException {
-        String file = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/rotations.txt";
+        String file = "src/main/resources/txt/rotations.txt";
 
         try (FileReader reader = new FileReader(file)) {
             JTextArea textArea = new JTextArea();

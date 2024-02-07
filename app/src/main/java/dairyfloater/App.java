@@ -18,6 +18,8 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.eclipse.jetty.client.api.Response;
 
@@ -103,7 +105,8 @@ public class App {
 
             String whenWorkSched = req.queryParams("n");
             
-            String filePath = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/test.txt";
+            String filePath = "src/main/resources/txt/schedule.txt";
+
             String type =  "UTF-8";
           
             PrintWriter writer = new PrintWriter(filePath, type);
@@ -119,7 +122,7 @@ public class App {
         });
 
         Spark.post("/downloadFile", (req, res) -> {
-            String filePath = "/Users/alex/Desktop/Dairy-Floater-Program/app/src/main/resources/txt/rotations.txt";
+            String filePath = "src/main/resources/txt/rotations.txt";
             try {
             
             res.header("Content-Disposition", "attachment; filename=rotations.txt");

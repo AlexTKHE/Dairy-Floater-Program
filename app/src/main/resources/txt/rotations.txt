@@ -4,36 +4,49 @@ Rotation Schedule for the day will be:
 Walk-ups: 
  
 
-2:00-2:30 PM:         Cashier   1:         Milan G   Order Taker   1:        Olivia M   
-2:30-3:00 PM:         Cashier   1:          Noah V   Order Taker   1:         Milan G   
-3:00-3:30 PM:         Cashier   1:        Julian B   Order Taker   1:          Emma N   
-3:30-4:00 PM:         Cashier   1:          Noah V   Order Taker   1:        Sydney H   
-4:00-4:30 PM:         Cashier   1:        Nicole S   Order Taker   1:        Maisha S   
-4:30-5:00 PM:         Cashier   1:        Maisha S   Order Taker   1:        Olivia M   
-5:00-5:30 PM:         Cashier   1:        Julian B   Order Taker   1:        Nicole S   
-5:30-6:00 PM:         Cashier   1:        Amishi B   Order Taker   1:        Maisha S   
-6:00-6:30 PM:         Cashier   1:        Maisha S   Order Taker   1:       Melissa M   
-6:30-7:00 PM:         Cashier   1:        Amishi B   Order Taker   1:        Olivia M   
-7:00-7:30 PM:         Cashier   1:         Bodie G   Order Taker   1:        Waylon H   
-7:30-8:00 PM:         Cashier   1:        Amishi B   Order Taker   1:        Olivia M   
-8:00-8:30 PM:         Cashier   1:         Bodie G   Order Taker   1:        Olivia M   
-8:30-9:00 PM:         Cashier   1:         Alden H   Order Taker   1:        Olivia M   
+2:00-2:30 PM:         Cashier   1:         Haley L   Order Taker   1:      Caroline T   
+2:30-3:00 PM:         Cashier   1:         Haley L   Order Taker   1:      Caroline T   
+3:00-3:30 PM:         Cashier   1:         Haley L   Order Taker   1:         Ethan S   
+3:30-4:00 PM:         Cashier   1:         Haley L   Order Taker   1:        Gregor M   
+4:00-4:30 PM:         Cashier   1:          Maya M   Order Taker   1:        Gregor M   
+4:30-5:00 PM:         Cashier   1:          Maya M   Order Taker   1:        Gregor M   
+5:00-5:30 PM:         Cashier   1:          Maya M   Order Taker   1:         Ethan S   
+5:30-6:00 PM:         Cashier   1:          Maya M   Order Taker   1:         Ethan S   
+6:00-6:30 PM:         Cashier   1:          Noah V   Order Taker   1:        Eliana H   
+6:30-7:00 PM:         Cashier   1:          Noah V   Order Taker   1:          Kate D   
+7:00-7:30 PM:         Cashier   1:         Ethan S   Order Taker   1:          Kate D   
+7:30-8:00 PM:         Cashier   1:         Ethan S   Order Taker   1:        Eliana H   
  
  
 Driveway: 
  
 
-2:00-2:30 PM:         Cashier   1:        Elijah L   Order Taker   1:        Julian B   
-2:30-3:00 PM:         Cashier   1:          Emma N   Order Taker   1:        Sydney H   
-3:00-3:30 PM:         Cashier   1:        Olivia M   Order Taker   1:        Elijah L   
-3:30-4:00 PM:         Cashier   1:          Emma N   Order Taker   1:        Julian B   
-4:00-4:30 PM:         Cashier   1:        Julian B   Order Taker   1:       Melissa M   
-4:30-5:00 PM:         Cashier   1:        Elijah L   Order Taker   1:          Noah V   
-5:00-5:30 PM:         Cashier   1:        Maisha S   Order Taker   1:       Melissa M   
-5:30-6:00 PM:         Cashier   1:          Noah V   Order Taker   1:          Emma N   
-6:00-6:30 PM:         Cashier   1:         Bodie G   Order Taker   1:         Alden H   
-6:30-7:00 PM:         Cashier   1:        Nicole S   Order Taker   1:        Waylon H   
-7:00-7:30 PM:         Cashier   1:         Alden H   Order Taker   1:        Olivia M   
-7:30-8:00 PM:         Cashier   1:        Waylon H   Order Taker   1:          Josh G   
-8:00-8:30 PM:         Cashier   1:        Waylon H   Order Taker   1:        Amishi B   
-8:30-9:00 PM:         Cashier   1:        Amishi B   Order Taker   1:        Waylon H   
+2:00-2:30 PM:         Cashier   1:        Gregor M   Order Taker   1:        Austin A   
+2:30-3:00 PM:         Cashier   1:        Gregor M   Order Taker   1:        Austin A   
+3:00-3:30 PM:         Cashier   1:        Gregor M   Order Taker   1:      Caroline T   
+3:30-4:00 PM:         Cashier   1:         Ethan S   Order Taker   1:      Caroline T   
+4:00-4:30 PM:         Cashier   1:         Ethan S   Order Taker   1:        Waylon H   
+4:30-5:00 PM:         Cashier   1:         Ethan S   Order Taker   1:        Waylon H   
+5:00-5:30 PM:         Cashier   1:          Noah V   Order Taker   1:        Gregor M   
+5:30-6:00 PM:         Cashier   1:          Noah V   Order Taker   1:        Gregor M   
+6:00-6:30 PM:         Cashier   1:         Ethan S   Order Taker   1:          Kate D   
+6:30-7:00 PM:         Cashier   1:         Ethan S   Order Taker   1:        Eliana H   
+7:00-7:30 PM:         Cashier   1:          Noah V   Order Taker   1:        Eliana H   
+7:30-8:00 PM:         Cashier   1:          Kate D   Order Taker   1: did not initilize -- OT   
+ 
+ 
+Curb: 
+ 
+
+2:00-2:30 PM:         Order Taker   1: did not initilize -- OT   
+2:30-3:00 PM:         Order Taker   1: did not initilize -- OT   
+3:00-3:30 PM:         Order Taker   1:        Waylon H   
+3:30-4:00 PM:         Order Taker   1:        Waylon H   
+4:00-4:30 PM:         Order Taker   1:        Austin A   
+4:30-5:00 PM:         Order Taker   1:        Austin A   
+5:00-5:30 PM:         Order Taker   1:        Eliana H   
+5:30-6:00 PM:         Order Taker   1:        Eliana H   
+6:00-6:30 PM:         Order Taker   1: did not initilize -- OT   
+6:30-7:00 PM:         Order Taker   1: did not initilize -- OT   
+7:00-7:30 PM:         Order Taker   1: did not initilize -- OT   
+7:30-8:00 PM:         Order Taker   1:          Noah V   
